@@ -1,0 +1,19 @@
+[
+    {
+        "27212152-de50-4c17-ad9b-6303d934cf80": {
+        "major_name": "Computer Science",
+        "requiredClasses": ["CSCE101","CSCE240","MATH147"],
+        "electiveCreditsRequired": "8",
+        "electiveOptions":["CLIM101"]
+        }
+
+    },
+    {
+        "27212152-de50-4c17-ad9b-6303d934cf81": {
+            "major_name": "Computer Information Systems",
+            "requiredClasses": ["CSCE101","CSCE240","MATH147"],
+            "electiveCreditsRequired": "8",
+            "electiveOptions":["CLIM101"]
+            }
+    }
+]

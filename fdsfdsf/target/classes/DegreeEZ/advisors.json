@@ -1,0 +1,20 @@
+[
+    {
+        "72a5236a-2c6d-4002-bf16-ff0174b0e243": {
+            "advisor_firstName": "Kelly",
+            "advisor_lastName": "Johnson",
+            "advisor_username": "kelly-johnson-1974",
+            "advisor_password": "password",
+            "advisor_students": ["97372bf4-24d2-4f70-968c-12898596277e"]
+        }
+    },
+    {
+        "72a5236a-2c6d-4002-bf16-ff0174b0e241": {
+            "advisor_firstName": "admin",
+            "advisor_lastName": "test",
+            "advisor_username": "admin",
+            "advisor_password": "admin",
+            "advisor_students": ["97372bf4-24d2-4f70-968c-12898596277e"]
+        }
+    }
+]

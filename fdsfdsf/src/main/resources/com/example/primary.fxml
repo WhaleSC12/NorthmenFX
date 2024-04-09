@@ -8,8 +8,15 @@
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
    <children>
-      <Label text="Primary View" />
-      <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
+      <Label text="Login" />
+      <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/> 
+      <Label test = "Username: "/>
+      <TextField fx:id="usernameField" />
+      <Label text = "Password: " />
+      <PasswordField fx:id="passwordField" />
+      <Button fx:id="loginButton" text="Login" onAction="#login"/>
+      <Label fx:id="errorLabel" textFill="RED" visible="false"/>       
+
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

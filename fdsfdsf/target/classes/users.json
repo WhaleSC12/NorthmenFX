@@ -1,0 +1,39 @@
+[
+  {
+    "858c93a3-d098-4458-b141-e8736696020a": {
+      "isAdvisor": "true",
+      "firstName": "Jackson",
+      "lastName": "Son",
+      "username": "jSon",
+      "password": "password" 
+    }
+  },
+  {
+    "858c93a3-d098-4458-b141-e8736696020a1": {
+      "isAdvisor": "false",
+      "firstName": "Joe",
+      "lastName": "Smith",
+      "username": "jSmith",
+      "password": "password1" 
+    }
+  },
+  {
+    "858c93a3-d098-4458-b141-e8736696020a2": {
+      "isAdvisor": "true",
+      "firstName": "Amy",
+      "lastName": "Jane",
+      "username": "aJane",
+      "password": "password2" 
+    }
+  },
+  {
+    "858c93a3-d098-4458-b141-e8736696020a3": {
+      "isAdvisor": "false",
+      "firstName": "Henry",
+      "lastName": "Krol",
+      "username": "hKrol",
+      "password": "password3" 
+    }
+  }
+
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "97372bf4-24d2-4f70-968c-12898596277e": {
+            "student_firstName": "Brax",
+            "student_lastName": "West",
+            "student_username": "braxa",
+            "student_password": "braxb",
+            "student_major": "27212152-de50-4c17-ad9b-6303d934cf80",
+            "completedCourses" : ["CSCE101","CSCE240"],
+            "enrolledClasses":
+            [
+                "CLIM101"
+            ],
+            "outstandingReq": ["MATH147","CSCE104","CSCE106","CSCE145","CSCE146","CSCE180","CSCE190","CSCE201","CSCE205"],
+            "advisor": "72a5236a-2c6d-4002-bf16-ff0174b0e243",
+            "advisorNote": "This is a note from the advisor."
+        }
+    },
+    {
+        "97372bf4-24d2-4f70-968c-12898596277e": {
+            "student_firstName": "jane",
+            "student_lastName": "Smith",
+            "student_username": "jane",
+            "student_password": "jane",
+            "student_major": "27212152-de50-4c17-ad9b-6303d934cf80",
+            "completedCourses" : ["CSCE101","CSCE240"],
+            "enrolledClasses":
+            [
+                "CLIM101"
+            ],
+            "outstandingReq": ["MATH147"],
+            "advisor": "72a5236a-2c6d-4002-bf16-ff0174b0e243",
+            "advisorNote": ""
+        }
+    },
+    {
+        "97372bf4-24d2-4f70-968c-12898596277b": {
+            "student_firstName": "Tawnie",
+            "student_lastName": "Hill",
+            "student_username": "tawnie",
+            "student_password": "hill",
+            "student_major": "27212152-de50-4c17-ad9b-6303d934cf80",
+            "completedCourses" : ["STAT110","STAT206"],
+            "enrolledClasses":
+            [
+                "CLIM101"
+            ],
+            "outstandingReq": ["MATH147"],
+            "advisor": "72a5236a-2c6d-4002-bf16-ff0174b0e243",
+            "advisorNote": ""
+        }
+
+
+    }
+
+]

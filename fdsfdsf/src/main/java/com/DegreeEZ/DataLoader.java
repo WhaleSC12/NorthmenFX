@@ -1,7 +1,9 @@
-package DegreeEZ;
+package com.DegreeEZ;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import DegreeEZ.Prerequisite;
 
 import java.io.IOException;
 import java.nio.file.Files;

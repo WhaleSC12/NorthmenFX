@@ -1,4 +1,4 @@
-package DegreeEZ;
+package com.DegreeEZ;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

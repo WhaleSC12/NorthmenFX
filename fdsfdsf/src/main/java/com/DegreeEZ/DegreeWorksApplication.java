@@ -1,11 +1,15 @@
-package DegreeEZ;
+package com.DegreeEZ;
 import java.util.ArrayList;
 import java.util.UUID;
 
+import DegreeEZ.User;
+
 public class DegreeWorksApplication {
     private User user;
+        private static DegreeWorksApplication instance = null;
 
-    public DegreeWorksApplication() {
+
+    private DegreeWorksApplication() {
     }
 
     private ArrayList<User> getAllUsers() {
@@ -28,6 +32,14 @@ public class DegreeWorksApplication {
 
     public void logout() {
         this.user = null;
+    }
+
+    public static DegreeWorksApplication getInstance() {
+        if(instance == null){
+            instance = new DegreeWorksApplication();
+        }
+
+        return instance;
     }
 
     public User createAccount(boolean isAdvisor, String firstName, String lastName, String username, String password, Major major) {

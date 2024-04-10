@@ -1,4 +1,4 @@
-package DegreeEZ;
+package com.DegreeEZ;
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -7,7 +7,7 @@ public class MajorList {
     private final ArrayList<Major> majors;
 
     private MajorList() {
-        majors = DataLoader.loadMajors("majors.json");
+        majors = DataLoader.loadMajors("fdsfdsf/src/main/java/com/DegreeEZ/majors.json");
     }
     
     public static synchronized MajorList getInstance() {

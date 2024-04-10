@@ -1,4 +1,4 @@
-package DegreeEZ;
+package com.DegreeEZ;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.IOException;

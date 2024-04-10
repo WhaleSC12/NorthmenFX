@@ -1,9 +1,11 @@
-package DegreeEZ; 
+package com.DegreeEZ; 
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
+
+import DegreeEZ.Prerequisite;
 
 public class Course {
     private UUID id;

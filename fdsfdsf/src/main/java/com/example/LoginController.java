@@ -1,10 +1,14 @@
 package com.example;
 
 import java.io.IOException;
+
+import com.DegreeEZ.DegreeWorksApplication;
+
 import javafx.scene.control.TextField;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
+import DegreeEZ.*;
 
 public class LoginController {
     @FXML
@@ -31,6 +35,15 @@ public class LoginController {
         }
 
         //need to put login logic here
+        DegreeWorksApplication app = DegreeWorksApplication.getInstance();
+
+        if(app.login(username, password) == null){
+            System.out.println("Error loggin in");
+        }
+        else {
+            System.out.println("YAY!");
+        }
+
 
         usernameField.clear();
         passwordField.clear();

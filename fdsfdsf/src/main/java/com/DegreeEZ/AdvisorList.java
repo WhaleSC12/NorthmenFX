@@ -8,7 +8,7 @@ public class AdvisorList {
     private ArrayList<Advisor> advisors;
 
     private AdvisorList() {
-        advisors = (ArrayList<Advisor>) DataLoader.loadAdvisors("advisors.json");
+        advisors = (ArrayList<Advisor>) DataLoader.loadAdvisors("fdsfdsf/src/main/java/com/DegreeEZ/advisors.json");
     }
 
     public static synchronized AdvisorList getInstance() {

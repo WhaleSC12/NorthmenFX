@@ -1,4 +1,4 @@
-package DegreeEZ;
+package com.DegreeEZ;
 
 import java.util.ArrayList;
 import java.util.UUID;
@@ -8,7 +8,7 @@ public class CourseList {
     private ArrayList<Course> courses;
 
     private CourseList() {
-        courses = DataLoader.loadCourses("courses.json");
+        courses = DataLoader.loadCourses("fdsfdsf/src/main/java/com/DegreeEZ/courses.json");
     }
 
     public static synchronized CourseList getInstance() {

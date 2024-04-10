@@ -1,6 +1,9 @@
-package DegreeEZ;
+package com.DegreeEZ;
 
 import org.junit.jupiter.api.Test;
+
+import DegreeEZ.Prerequisite;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.UUID;

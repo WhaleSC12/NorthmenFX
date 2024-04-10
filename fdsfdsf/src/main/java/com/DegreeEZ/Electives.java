@@ -1,4 +1,4 @@
-package DegreeEZ;
+package com.DegreeEZ;
 import java.util.ArrayList;
 
 public class Electives  {

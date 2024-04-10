@@ -6,7 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 
-public class PrimaryController {
+public class LoginController {
     @FXML
     private TextField usernameField;
     @FXML
@@ -16,7 +16,7 @@ public class PrimaryController {
 
     @FXML
     private void switchToSecondary() throws IOException {
-        App.setRoot("primary");
+        App.setRoot("Login");
     }
 
     @FXML

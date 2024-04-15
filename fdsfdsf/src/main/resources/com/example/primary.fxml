@@ -36,7 +36,7 @@
                </font>
             </Text>
             <Text layoutX="86.0" layoutY="585.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?" />
-            <Hyperlink fx:id="signUpLink" layoutX="215.0" layoutY="569.0" text="Sign up!" />
+            <Hyperlink id="sign-up-link" fx:id="signUpLink" layoutX="215.0" layoutY="569.0" text="Sign up!" onAction = "#handleSignUpLink"/>
             <TextField fx:id="passwordField" layoutX="71.0" layoutY="326.0" prefHeight="49.0" prefWidth="235.0" promptText="Password" />
             <Button fx:id="signInButton" layoutX="161.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleSignIn" text="Sign in" />
             <Text fx:id="loginMessage" layoutX="50.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" />

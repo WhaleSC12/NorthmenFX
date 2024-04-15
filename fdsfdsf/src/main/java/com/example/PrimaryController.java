@@ -68,6 +68,10 @@ public class PrimaryController {
             loginMessage.setVisible(true);
         }
     }
+
+    private void handleSignUpLink(ActionEvent event) {
+        navigateTo("SignUp.fxml");
+    }
     
 
 

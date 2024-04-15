@@ -30,5 +30,13 @@ public class AdvisorList {
     public static synchronized ArrayList<Advisor> getAdvisors() {
         return getInstance().advisors;
     }
-
+    
+    public boolean contains(UUID uuid) {
+        for (Advisor advisor : advisors) {
+            if (advisor.getUUID().equals(uuid)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

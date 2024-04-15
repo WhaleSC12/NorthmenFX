@@ -7,10 +7,7 @@
             "student_password": "braxb",
             "student_major": "27212152-de50-4c17-ad9b-6303d934cf80",
             "completedCourses" : ["CSCE101","CSCE240"],
-            "enrolledClasses":
-            [
-                "CLIM101"
-            ],
+            "enrolledClasses":["CLIM101"],
             "outstandingReq": ["MATH147","CSCE104","CSCE106","CSCE145","CSCE146","CSCE180","CSCE190","CSCE201","CSCE205"],
             "advisor": "72a5236a-2c6d-4002-bf16-ff0174b0e243",
             "advisorNote": "This is a note from the advisor."

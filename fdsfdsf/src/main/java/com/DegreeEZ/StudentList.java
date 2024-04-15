@@ -62,5 +62,14 @@ public class StudentList {
         this.students = new ArrayList<>(newStudents);
     }
 
+    public boolean contains(UUID uuid) {
+        for (Student student : students) {
+            if (student.getUUID().equals(uuid)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }

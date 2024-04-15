@@ -6,8 +6,9 @@ import java.util.UUID;
 public class CompletedCourse{
     private int grade;
     private Course course = null;
+    private int semesterTaken; // Semester taken (1-8)
 
-    public CompletedCourse(UUID courseID, int grade) {
+    public CompletedCourse(UUID courseID, int grade, int semesterTaken) {
         for (Course c : CourseList.getCourses()) {
             if (c.getId().equals(courseID)) {
                 course = c;
@@ -17,6 +18,7 @@ public class CompletedCourse{
             System.err.println("Warning: Could not find a course matching ID " + courseID);
         }
         this.grade = grade;
+        this.semesterTaken = semesterTaken;
     }
 
     // Getters and setters for the new fields

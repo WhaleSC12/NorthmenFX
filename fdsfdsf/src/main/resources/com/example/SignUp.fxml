@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Button?>
-<?import javafx.geometry.Insets?>
-<?import java.net.*?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.SecondaryController">
-    <children>
-        <Label text="SignUp" />
-        <Button fx:id="secondaryButton" text="Sign Up" onAction="#switchToPrimary" />
-      <Label text = "First Name: "/>
-      <TextField fx:id="firstNameField" />
-
-      <Label text = "Last Name: "/>
-      <TextField fx:id="lastNameField" />
-
-      <Label text = "Email: "/>
-      <TextField fx:id="emailField" />
-
-      <Label text = "Username: "/>
-      <TextField fx:id="userameField" />
-
-      <Label text = "Password: " />
-      <PasswordField fx:id="passwordField" />
-
-      <Button fx:id="signUpButton" text="Sign Up" onAction="#signUp"/>
-      <Label fx:id="errorLabel" textFill="RED" visible="false"/>       
-
-    </children>
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-     <URL value="@styles.css" />
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField id="first-name-field" layoutX="48.0" layoutY="144.0" prefHeight="40.0" prefWidth="220.0" promptText="First Name" />
+      <Text layoutX="48.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to">
+         <font>
+            <Font name="AgencyFB-Bold" size="21.0" />
+         </font></Text>
+      <TextField id="last-name-field" layoutX="48.0" layoutY="198.0" prefHeight="40.0" prefWidth="220.0" promptText="Last Name" />
+      <TextField id="email-field" layoutX="48.0" layoutY="257.0" prefHeight="40.0" prefWidth="220.0" promptText="Email" />
+      <TextField id="username-field" layoutX="48.0" layoutY="312.0" prefHeight="40.0" prefWidth="220.0" promptText="Username" />
+      <TextField id="password-field" layoutX="48.0" layoutY="371.0" prefHeight="40.0" prefWidth="220.0" promptText="Password" />
+      <ImageView fitHeight="49.0" fitWidth="177.0" layoutX="139.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@degreeEZ-logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="35.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your information and click 'Continue'" />
+      <CheckBox id="advisor-checkbox" layoutX="86.0" layoutY="422.0" mnemonicParsing="false" text="Check if you are an Advisor">
+         <font>
+            <Font name="AgencyFB-Bold" size="13.0" />
+         </font>
+      </CheckBox>
+    <Button id="continue-btn" layoutX="125.0" layoutY="490.0" mnemonicParsing="false" text="Continue" onAction="#handleSignUp" fx:id="continueButton"/>
+   </children>
+</AnchorPane>

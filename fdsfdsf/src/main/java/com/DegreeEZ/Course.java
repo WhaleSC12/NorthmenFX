@@ -16,10 +16,9 @@ public class Course {
     private int minGrade;
     private List<Semester> availability; 
     private int creditHours;
-    private Semester semester;
 
     // Constructor
-    public Course(UUID id, String name, Subject subject, int number, int minGrade, ArrayList<Semester> availability, int creditHours, Semester semester) {
+    public Course(UUID id, String name, Subject subject, int number, int minGrade, ArrayList<Semester> availability, int creditHours) {
         this.id = UUID.randomUUID(); // Generate a unique ID for each course
         this.name = name;
         this.subject = subject;
@@ -27,7 +26,6 @@ public class Course {
         this.minGrade = minGrade;
         this.availability = availability;
         this.creditHours = creditHours;
-        this.semester = semester;
 
         this.prerequisites = new ArrayList<Prerequisite>();
     }
@@ -102,7 +100,7 @@ public class Course {
     }
 
     public String toString() {
-        return name;
+        return subject + " " + number + "(" + name + ")";
     }
 
     public String courseCode() {

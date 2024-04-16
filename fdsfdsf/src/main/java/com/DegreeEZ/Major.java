@@ -8,15 +8,15 @@ import java.util.UUID;
 public class Major {
     private UUID majorID;
     private String majorName;
-    private ArrayList<Course> requiredCourses;
+    private HashMap<Course,String> requiredCourses;
     private int electiveCreditsRequired;
     private ArrayList<Course> electiveOptions;
 
     public Major(UUID majorId,
                  String majorName,
-                 ArrayList<Course> requiredCourses,
+                 HashMap<Course,String> requiredCourses,
                  int electiveCreditsRequired,
-                 ArrayList<Course> electiveOptions) { // need to implement elective cats still
+                 ArrayList<Course> electiveOptions) { 
         this.majorID = majorId;
         this.majorName = majorName;
         this.requiredCourses = requiredCourses;

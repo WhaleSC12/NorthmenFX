@@ -2,27 +2,37 @@ package DegreeEZ;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.HashMap;
+import java.util.Set;
 
 public class Prerequisite {
-    private ArrayList<Course> courses;
+    private HashMap<Course,String> courseRequirements;
 
     public Prerequisite() {
-        courses = new ArrayList<Course>();
+        courseRequirements = new HashMap<Course,String>();
+    }
+
+    public void addCourseRequirement(Course course, String minGrade) {
+        courseRequirements.put(course,minGrade);
     }
 
     public String toString() {
         StringBuilder result = new StringBuilder();
-        Iterator<Course> it = courses.iterator();
+        Set<HashMap.Entry<Course, Integer>> entries = courseRequirements.entrySet();
+        Iterator<HashMap.Entry<Course, Integer>> it = entries.iterator();
         while (it.hasNext()) {
-            result.append(it.next().getName());
+            HashMap.Entry<Course, Integer> entry = it.next();
+            result.append(entry.getKey().getName());
+            result.append(" (Min Grade: ").append(entry.getValue()).append(")");
             if (it.hasNext()) {
-                result.append(" or ");
+                result.append(", "); // To separate entries with a comma
             }
         }
         return result.toString();
     }
+    
 
-    public ArrayList<Course> getCourses() {
-        return courses;
+    public HashMap<Course,String> getCourseRequirements() {
+        return courseRequirements;
     }
 }

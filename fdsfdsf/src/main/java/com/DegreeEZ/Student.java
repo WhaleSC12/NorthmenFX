@@ -10,7 +10,7 @@ public class Student extends User {
     private ArrayList<Course> enrolledCourses;
     private ArrayList<Course> outstandingRequirements;
     private UUID advisorUUID;
-    private String advisorNote;
+    private ArrayList<String> advisorNotes;
 
     // Constructor
     public Student(UUID uuid,
@@ -22,14 +22,15 @@ public class Student extends User {
                    ArrayList<CompletedCourse> completedCourses,
                    ArrayList<Course> enrolledCourses,
                    ArrayList<Course> outstandingRequirements,
-                   UUID advisorUUID) {
+                   UUID advisorUUID,
+                   ArrayList<String> advisorNotes) {
         super(uuid, username, firstName, lastName, password);
         major = MajorList.getMajorByUUID(majorUUID);
         this.completedCourses = completedCourses;
         this.enrolledCourses = enrolledCourses;
         this.outstandingRequirements = outstandingRequirements;
         this.advisorUUID = advisorUUID;
-        this.advisorNote = "";
+        this.advisorNotes = new ArrayList<String>();
     }
     public Student(UUID uuid,
                    String firstName,
@@ -37,8 +38,9 @@ public class Student extends User {
                    String username,
                    String password,
                    UUID majorUUID){
-        this(uuid,firstName,lastName,username,password,majorUUID,new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), null);
+        this(uuid,firstName,lastName,username,password,majorUUID,new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), null, null);
     }
+
 
     public Major getMajor() {
         return this.major;

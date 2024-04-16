@@ -1,19 +1,38 @@
 [
     {
-        "27212152-de50-4c17-ad9b-6303d934cf80": {
+        "major_uuid": "27212152-de50-4c17-ad9b-6303d934cf80",
         "major_name": "Computer Science",
-        "requiredClasses": ["CSCE101","CSCE240","MATH147"],
-        "electiveCreditsRequired": "8",
-        "electiveOptions":["CLIM101"]
-        }
-
-    },
-    {
-        "27212152-de50-4c17-ad9b-6303d934cf81": {
-            "major_name": "Computer Information Systems",
-            "requiredClasses": ["CSCE101","CSCE240","MATH147"],
-            "electiveCreditsRequired": "8",
-            "electiveOptions":["CLIM101"]
+        "requiredClasses": [
+            {
+                "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca659",
+                "course_minGrade": "C"
+            },
+            {
+                "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca660",
+                "course_minGrade": "C"
+            },
+            {
+                "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca661",
+                "course_minGrade": "B"
+            },
+            {
+                "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca662",
+                "course_minGrade": "B"
+            },
+            {
+                "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca663",
+                "course_minGrade": "C"
+            },
+            {
+                "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca664",
+                "course_minGrade": "B"
+            },
+            {
+                "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca665",
+                "course_minGrade": "B"
             }
+        ],
+        "electiveCreditsRequired": "6",
+        "electiveOptions": ["dbbe9692-d811-4230-90bb-d0197a2ca669","dbbe9692-d811-4230-90bb-d0197a2ca668","dbbe9692-d811-4230-90bb-d0197a2ca67"]
     }
 ]

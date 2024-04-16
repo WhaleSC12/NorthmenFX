@@ -9,8 +9,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.StudentProfileController">
    <children>
+      <ImageView fitHeight="822.0" fitWidth="495.0" layoutX="-45.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/bg.jpeg" />
+         </image>
+      </ImageView>
       <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" />
-      <Pane layoutY="740.0" prefHeight="100.0" prefWidth="390.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
+      <Pane layoutY="745.0" prefHeight="100.0" prefWidth="397.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
          <children>
             <Line endX="-100.0" endY="100.0" layoutX="191.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-100.0" endY="100.0" layoutX="295.0" startX="-100.0" stroke="WHITE" />
@@ -37,6 +42,5 @@
             </ImageView>
          </children>
       </Pane>
-      <Text layoutX="159.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[TEMPLATE]" />
    </children>
 </AnchorPane>

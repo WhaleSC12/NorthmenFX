@@ -52,13 +52,9 @@ public class PrimaryController {
         
         if (user != null && isStudent) {
             loginMessage.setText("Login successful!");
-            loginMessage.setFill(Color.GREEN);
-            loginMessage.setVisible(true);
             navigateTo("student-home");
         } else if (user != null && !isStudent) {
             loginMessage.setText("Login successful!");
-            loginMessage.setFill(Color.GREEN); 
-            loginMessage.setVisible(true);
             navigateTo("advisor-home");
         }
         
@@ -69,16 +65,18 @@ public class PrimaryController {
         }
     }
 
-    private void handleSignUpLink(ActionEvent event) {
+    
+    @FXML
+    void handleSignUp(ActionEvent event) {
         navigateTo("SignUp.fxml");
     }
     
 
-
+    
     private void navigateTo(String fxmlFile) {
         System.out.println("Navigating to " + fxmlFile);
         try {
-            App.setRoot(fxmlFile);
+            App.setRoot("/com/example/"+ fxmlFile);
         } catch (IOException e) {
             e.printStackTrace();
             loginMessage.setText("Failed to load the view: " + fxmlFile);

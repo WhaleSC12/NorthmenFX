@@ -2,7 +2,7 @@ package com.DegreeEZ;
 import java.util.ArrayList;
 import java.util.UUID;
 
-import DegreeEZ.User;
+import com.DegreeEZ.User;
 
 public class DegreeWorksApplication {
     private User user;

@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
-import DegreeEZ.Prerequisite;
+import com.DegreeEZ.Prerequisite;
 
 public class Course {
     private UUID id;
@@ -16,6 +16,7 @@ public class Course {
     private int minGrade;
     private List<Semester> availability; 
     private int creditHours;
+    private Semester semester;
 
     // Constructor
     public Course(UUID id, String name, Subject subject, int number, int minGrade, ArrayList<Semester> availability, int creditHours) {
@@ -79,11 +80,11 @@ public class Course {
         this.creditHours = creditHours;
     }
 
-    public int getSemester() {
+    public Semester getSemester() {
         return semester;
     }
 
-    public void setSemester(int semester) {
+    public void setSemester(Semester semester) {
         this.semester = semester;
     }
 

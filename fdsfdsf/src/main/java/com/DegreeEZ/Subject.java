@@ -1,4 +1,4 @@
-package DegreeEZ;
+package com.DegreeEZ;
 
 public enum Subject {
     MATH,

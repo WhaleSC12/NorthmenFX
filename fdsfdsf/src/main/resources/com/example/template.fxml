@@ -20,22 +20,22 @@
             <Line endX="-100.0" endY="100.0" layoutX="394.0" startX="-100.0" stroke="WHITE" />
             <ImageView fx:id="profileButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="315.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/profile.jpeg" />
+                  <Image url="@../../../../../target/classes/com/example/images/profile.jpeg" />
                </image>
             </ImageView>
             <ImageView fx:id="semesterButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="218.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/calendar-icon-free-vector.jpeg" />
+                  <Image url="@../../../../../target/classes/com/example/images/calendar-icon-free-vector.jpeg" />
                </image>
             </ImageView>
             <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="113.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/search.jpeg" />
+                  <Image url="@../../../../../target/classes/com/example/images/search.jpeg" />
                </image>
             </ImageView>
             <ImageView fx:id="homeButton" fitHeight="75.0" fitWidth="50.0" layoutX="26.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/home-new.jpeg" />
+                  <Image url="@../../../../../target/classes/com/example/images/home-new.jpeg" />
                </image>
             </ImageView>
          </children>

@@ -40,11 +40,11 @@ public class Major {
         this.majorName = majorName;
     }
 
-    public ArrayList<Course> getRequiredCourses() {
+    public HashMap<Course,String> getRequiredCourses() {
         return requiredCourses;
     }
 
-    public void setRequiredCourses(ArrayList<Course> requiredCourses) {
+    public void setRequiredCourses(HashMap<Course,String> requiredCourses) {
         this.requiredCourses = requiredCourses;
     }
 

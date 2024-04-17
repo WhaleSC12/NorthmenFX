@@ -95,7 +95,7 @@ public class Course {
     }
 
     public String toString() {
-        return subject + " " + number + "(" + name + ")";
+        return subject + " " + number + " (" + name + ")";
     }
 
     public String courseCode() {

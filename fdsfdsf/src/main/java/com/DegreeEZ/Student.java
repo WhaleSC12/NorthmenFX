@@ -14,7 +14,6 @@ public class Student extends User {
     private ArrayList<String> advisorNotes;
     private int semestersCompleted;
     private String bio;
-    private ArrayList<String> hobbies;
 
     // Constructor
     public Student(UUID uuid,

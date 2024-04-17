@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import DegreeEZ.*;
+import com.DegreeEZ.*;
 
 /**
  * JavaFX App

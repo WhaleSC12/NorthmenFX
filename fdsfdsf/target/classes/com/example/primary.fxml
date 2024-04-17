@@ -12,7 +12,7 @@
 
 <VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
    <children>
-      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="350.0">
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0">
          <children>
             <Text layoutX="-84.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to" textAlignment="CENTER" wrappingWidth="390.0">
                <font>

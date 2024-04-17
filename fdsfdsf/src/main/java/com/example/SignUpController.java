@@ -117,7 +117,6 @@ public class SignUpController {
         if (selectedCourse != null && selectedGrade != null && selectedSemester != null) {
             CompletedCourse newCourse = new CompletedCourse(selectedCourse.getId(), selectedGrade, selectedSemester);
             completedCourses.add(newCourse);
-            // Clear selections to allow for another entry
             coursesDropdown.getSelectionModel().clearSelection();
             gradeDropdown.getSelectionModel().clearSelection();
             semesterDropdown.getSelectionModel().clearSelection();
@@ -178,6 +177,7 @@ public class SignUpController {
         Advisor selectedAdvisor = advisorDropdown.getSelectionModel().getSelectedItem();
 
         int semestersTaken = 0;
+        // need  to fix this to count # of completed courses bc of registering for spring semesters
         if (selectedYear.equals("Freshman")) {
             semestersTaken = 0;
         } else if (selectedYear.equals("Sophomore")) {
@@ -192,7 +192,7 @@ public class SignUpController {
 
     private void createAdvisorAccount() {
         if (!studentUUIDs.isEmpty()) {
-            DegreeWorksApplication.getInstance().createAccount(true, firstNameField.getText(), lastNameField.getText(), userNameField.getText(), passwordField.getText(), null, new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), null, new ArrayList<>(), 0, emailField.getText(), studentUUIDs);
+            DegreeWorksApplication.getInstance().createAccount(true, firstNameField.getText(), lastNameField.getText(), userNameField.getText(), passwordField.getText(), null, new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), null, new ArrayList<>(), 0,"", studentUUIDs);
         } else {
             errorLabel.setText("No students added.");
             errorLabel.setVisible(true);

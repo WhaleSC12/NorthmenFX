@@ -28,7 +28,7 @@
          </image>
       </ImageView>
       <Text layoutX="33.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your information and click 'Continue'" />
-      <CheckBox id="advisor-checkbox" fx:id="advisorcheckbox" layoutX="87.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleAdvisorCheck" text="Check if you are an Advisor">
+      <CheckBox id="advisor-checkbox" fx:="advisorcheckbox" layoutX="87.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleAdvisorCheck" text="Check if you are an Advisor">
          <font>
             <Font name="AgencyFB-Bold" size="13.0" />
          </font>
@@ -38,7 +38,7 @@
             <DropShadow />
          </effect></Button>
       <TextField id="studentsField" fx:id="studentsField" layoutX="45.0" layoutY="308.0" prefHeight="26.0" prefWidth="220.0" promptText="Enter Student First &amp; Last Name" visible="false" />
-      <Button id="addStudentsBtn" fx:id="addStudentsBtn" layoutX="265.0" layoutY="308.0" mnemonicParsing="false" style="-fx-background-color: LIGHTGREEN;" text="+" visible="false" />
+      <Button id="addStudentsBtn" fx:id="addStudentsBtn" layoutX="265.0" layoutY="308.0" mnemonicParsing="false" style="-fx-background-color: LIGHTGREEN;" text="+" visible="false" onAction="#addStudent" />
       <Text id="major-text" fx:id="majorText" layoutX="20.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Major:">
          <font>
             <Font name="AgencyFB-Bold" size="14.0" />
@@ -49,7 +49,7 @@
             <Font name="AgencyFB-Bold" size="14.0" />
          </font>
       </Text>
-      <Text id="add-completed-courses-text" fx:id="completedCourseText" layoutX="14.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Completed Courses:">
+      <Text id="add-completed-courses-text" fx:id="completedCourseText" layoutX="14.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Completed Courses:" onAction="#addCompletedCourse">
          <font>
             <Font name="AgencyFB-Bold" size="14.0" />
          </font>
@@ -76,7 +76,7 @@
          </font>
       </Text>
       <ComboBox fx:id="currentCoursesDropdown" layoutX="78.0" layoutY="386.0" prefHeight="24.0" prefWidth="138.0" />
-      <Button id="add-completed-course-button" fx:id="addEnrolledCourseBtn" layoutX="238.0" layoutY="384.0" minHeight="16.0" minWidth="40.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="40.0" style="-fx-background-color: lightgreen;" text="+" />
+      <Button id="add-completed-course-button" fx:id="addEnrolledCourseBtn" layoutX="238.0" layoutY="384.0" minHeight="16.0" minWidth="40.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="40.0" style="-fx-background-color: lightgreen;" text="+" onAction="#addEnrolledCourse" />
       <Text id="add-completed-courses-text" fx:id="advisorText" layoutX="7.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Advisor:">
          <font>
             <Font name="AgencyFB-Bold" size="14.0" />

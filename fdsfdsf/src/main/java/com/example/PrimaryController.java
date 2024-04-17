@@ -31,7 +31,6 @@ public class PrimaryController {
     @FXML
     private Text loginMessage;
 
-    // Method to handle the sign-up hyperlink click
     @FXML
     private void handleSignIn(ActionEvent event) {
         String username = usernameField.getText();

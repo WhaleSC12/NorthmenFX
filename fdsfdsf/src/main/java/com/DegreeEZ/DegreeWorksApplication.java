@@ -12,18 +12,19 @@ public class DegreeWorksApplication {
     private DegreeWorksApplication() {
     }
 
-    private ArrayList<User> getAllUsers() {
-        ArrayList<User> userList = new ArrayList<User>();
-        userList.addAll(AdvisorList.getAdvisors());
-        userList.addAll(StudentList.getStudents());
-        return userList;
-    }
 
     public User login(String username, String password) {
-        ArrayList<User> userList = getAllUsers();
-        for (User user : userList) {
-            if (user.getUserName().equals(username) && user.getPassword().equals(password)) {
-                this.user = user;
+        ArrayList<Student> allStudents = StudentList.getStudents();
+        ArrayList<Advisor> allAdvisors = AdvisorList.getAdvisors();
+        for (Student student : allStudents) {
+            if (student.getUserName().equals(username) && student.getPassword().equals(password)) {
+                this.user = student;
+                return user;
+            }
+        }
+        for (Advisor advisor : allAdvisors) {
+            if (advisor.getUserName().equals(username) && advisor.getPassword().equals(password)) {
+                this.user = advisor;
                 return user;
             }
         }

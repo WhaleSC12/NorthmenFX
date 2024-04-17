@@ -20,22 +20,22 @@
    </children>
    <AnchorPane layoutY="708.0" prefHeight="100.0" prefWidth="390.0" style="-fx-background-radius: 10; -fx-background-color: white;">
          <children>
-            <ImageView fx:id="homeButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="14.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="advisorHomeButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="14.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/home-icon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="searchButton" fitHeight="69.0" fitWidth="54.0" layoutX="113.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="advisorSearchButton" fitHeight="69.0" fitWidth="54.0" layoutX="113.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/searchicon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="calendarButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="223.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="advisorCalendarButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="223.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/calendar-icon-free-vector.jpeg" />
                </image>
             </ImageView>
-            <ImageView fx:id="profileButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="320.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="advisorProfileButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="320.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/profile-icon.jpeg" />
                </image>

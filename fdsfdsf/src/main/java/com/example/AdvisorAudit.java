@@ -6,19 +6,19 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 
-public class AdvisorAudit {
-    
-    @FXML
-    private ImageView homeButton;
+public class AdvisorAudit  {
 
     @FXML
-    private ImageView searchButton;
+    private ImageView advisorHomeButton;
 
     @FXML
-    private ImageView calendarButton;
+    private ImageView advisorSearchButton;
 
     @FXML
-    private ImageView profileButton;
+    private ImageView advisorCalendarButton;
+
+    @FXML
+    private ImageView advisorProfileButton;
 
     @FXML
     private TextField studentName;
@@ -44,3 +44,5 @@ public class AdvisorAudit {
 }
 
 
+    
+    

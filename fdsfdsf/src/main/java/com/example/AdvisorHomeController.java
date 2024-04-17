@@ -11,13 +11,16 @@ public class AdvisorHomeController {
     private ImageView homeButton;
 
     @FXML
-    private ImageView searchButton;
+    private ImageView advisorHomeButton;
 
     @FXML
-    private ImageView calendarButton;
+    private ImageView advisorSearchButton;
 
     @FXML
-    private ImageView profileButton;
+    private ImageView advisorCalendarButton;
+
+    @FXML
+    private ImageView advisorProfileButton;
 
     @FXML
     private CheckBox checkBox1;
@@ -38,4 +41,6 @@ public class AdvisorHomeController {
     private CheckBox checkBox3;
 
 }
+
+
 

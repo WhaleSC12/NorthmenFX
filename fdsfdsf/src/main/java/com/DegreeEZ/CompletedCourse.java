@@ -21,10 +21,18 @@ public class CompletedCourse{
         this.semesterTaken = semesterTaken;
     }
 
-    // Getters and setters for the new fields
-    public int getGrade() {
+    public String getGrade() {
         return grade;
     }
+
+    public void setGrade(String grade) {
+        if (grade.length() ==1) {
+            this.grade = grade;
+        } else {
+            System.out.println("Grade must be A,B,C,D,F");
+        }
+    }
+
 
     public Course getCourse() {
         return course;

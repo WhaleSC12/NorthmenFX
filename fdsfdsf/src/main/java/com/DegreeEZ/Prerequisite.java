@@ -18,10 +18,10 @@ public class Prerequisite {
 
     public String toString() {
         StringBuilder result = new StringBuilder();
-        Set<HashMap.Entry<Course, Integer>> entries = courseRequirements.entrySet();
-        Iterator<HashMap.Entry<Course, Integer>> it = entries.iterator();
+        Set<HashMap.Entry<Course, String>> entries = courseRequirements.entrySet();
+        Iterator<HashMap.Entry<Course, String>> it = entries.iterator();
         while (it.hasNext()) {
-            HashMap.Entry<Course, Integer> entry = it.next();
+            HashMap.Entry<Course, String> entry = it.next();
             result.append(entry.getKey().getName());
             result.append(" (Min Grade: ").append(entry.getValue()).append(")");
             if (it.hasNext()) {

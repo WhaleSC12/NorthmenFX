@@ -4,6 +4,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import com.DegreeEZ.Prerequisite;
+import com.google.gson.JsonArray;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -30,6 +31,8 @@ class DataLoader {
             String username = studentJSON.getString("student_username");
             String password = studentJSON.getString("student_password");
             UUID majorUUID = UUID.fromString(studentJSON.getString("student_major"));
+            int semestersCompleted = studentJSON.getInt("semestersCompleted"); 
+
 
             JSONArray completedCoursesArray = studentJSON.getJSONArray("completedCourses");
             ArrayList<CompletedCourse> completedCourses = loadCompletedCoursesFromJSONArray(completedCoursesArray);
@@ -37,7 +40,7 @@ class DataLoader {
             JSONArray enrolledClassesArray = studentJSON.getJSONArray("enrolledClasses");
             ArrayList<Course> enrolledCourses = loadCoursesFromJSONArray(enrolledClassesArray);
 
-            JSONArray outstandingReqArray = studentJSON.getJSONArray("outstandingReq");
+            JsonArray outstandingReqArray = studentJSON.getJSONArray("outstandingReq");
             ArrayList<Course> outstandingReqs = loadCoursesFromJSONArray(outstandingReqArray);
 
             UUID advisorUUID = UUID.fromString(studentJSON.getString("advisor"));
@@ -47,7 +50,7 @@ class DataLoader {
                 advisorNotes.add(advisorNotesJSON.getString(j));
             }
 
-            students.add(new Student(studentUuid, firstName, lastName, username, password, majorUUID, completedCourses, enrolledCourses, outstandingReqs, advisorUUID, advisorNotes));
+            students.add(new Student(studentUuid, firstName, lastName, username, password, majorUUID, completedCourses, enrolledCourses, outstandingReqs, advisorUUID, advisorNotes,semestersCompleted));
         }
         return students;
     }

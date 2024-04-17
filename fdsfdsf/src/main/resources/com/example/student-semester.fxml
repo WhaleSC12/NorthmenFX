@@ -42,5 +42,13 @@
             </ImageView>
          </children>
       </Pane>
+      <Text layoutX="173.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 1" />
+      <Text layoutX="173.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 2" />
+      <Text layoutX="173.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 3" />
+      <Text layoutX="173.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 4" />
+      <Text layoutX="173.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 5" />
+      <Text layoutX="173.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 6" />
+      <Text layoutX="173.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 7" />
+      <Text layoutX="173.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 8" />
    </children>
 </AnchorPane>

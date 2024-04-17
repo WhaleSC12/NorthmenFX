@@ -186,11 +186,11 @@ public class DegreeWorksUI {
             }
         }
 
-        System.out.println("Current GPA:" + 0.0);
+        System.out.println("Current GPA:" + student.calculateGPA());
 
-        if (!student.getAdvisorNote().isEmpty()) {
+        if (!student.getAdvisorNotes().isEmpty()) {
             System.out.println("\nAdvisor's Note:");
-            System.out.println(student.getAdvisorNote());
+            student.printAdvisorNotes();
         } else {
             System.out.println("No messages from advisor");
         }

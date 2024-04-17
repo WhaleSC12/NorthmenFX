@@ -12,18 +12,19 @@ public class DegreeWorksApplication {
     private DegreeWorksApplication() {
     }
 
-    private ArrayList<User> getAllUsers() {
-        ArrayList<User> userList = new ArrayList<User>();
-        userList.addAll(AdvisorList.getAdvisors());
-        userList.addAll(StudentList.getStudents());
-        return userList;
-    }
 
     public User login(String username, String password) {
-        ArrayList<User> userList = getAllUsers();
-        for (User user : userList) {
-            if (user.getUserName().equals(username) && user.getPassword().equals(password)) {
-                this.user = user;
+        ArrayList<Student> allStudents = StudentList.getStudents();
+        ArrayList<Advisor> allAdvisors = AdvisorList.getAdvisors();
+        for (Student student : allStudents) {
+            if (student.getUserName().equals(username) && student.getPassword().equals(password)) {
+                this.user = student;
+                return user;
+            }
+        }
+        for (Advisor advisor : allAdvisors) {
+            if (advisor.getUserName().equals(username) && advisor.getPassword().equals(password)) {
+                this.user = advisor;
                 return user;
             }
         }
@@ -42,19 +43,20 @@ public class DegreeWorksApplication {
         return instance;
     }
 
-    public User createAccount(boolean isAdvisor, String firstName, String lastName, String username, String password, Major major) {
-        ArrayList<User> userList = getAllUsers();
-        if (userList.stream().anyMatch(user -> user.getUserName().equals(username))) {
+    public User createAccount(boolean isAdvisor, String firstName, String lastName, String username, String password, Major major, ArrayList<CompletedCourse> completedCourses, ArrayList<Course> enrolledCourses, ArrayList<Course> outstandingRequirements, UUID advisorUUID, ArrayList<String> advisorNotes, int semestersCompleted, String bio, ArrayList<UUID> studentUUIDs) {
+        ArrayList<Student> allStudents = StudentList.getStudents();
+        ArrayList<Advisor> allAdvisors = AdvisorList.getAdvisors();
+        if (allStudents.stream().anyMatch(user -> user.getUserName().equals(username)) || allAdvisors.stream().anyMatch(user -> user.getUserName().equals(username))) {
             System.err.printf("Username %s already exists!%n", username);
             return null;
         }
         UUID uuid = UUID.randomUUID();
         User newUser;
         if (!isAdvisor) {
-            newUser = new Student(uuid, firstName, lastName, username, password, major.getMajorID(), new ArrayList<CompletedCourse>(), new ArrayList<Course>(), new ArrayList<Course>(), null);
+            newUser = new Student(uuid, firstName, lastName, username, password, major.getMajorID(), completedCourses, enrolledCourses, outstandingRequirements, advisorUUID, advisorNotes, semestersCompleted, bio);
             StudentList.getStudents().add((Student) newUser);
         } else{
-            newUser = new Advisor(uuid, firstName, lastName, username, password);
+            newUser = new Advisor(uuid, username, firstName, lastName, password, studentUUIDs);
             AdvisorList.getAdvisors().add((Advisor) newUser);
         }
         return newUser;

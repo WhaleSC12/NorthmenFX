@@ -50,7 +50,10 @@ public class StudentList {
                                    new ArrayList<>(student.getCompletedCourses()),
                                    new ArrayList<>(student.getEnrolledCourses()),
                                    new ArrayList<>(student.getOutstandingRequirements()),
-                                   student.getAdvisorUuid()));
+                                   student.getAdvisorUuid(),
+                                   student.getAdvisorNotes(),
+                                   student.getSemestersCompleted(),
+                                   student.getBio()));
         }
     }
 

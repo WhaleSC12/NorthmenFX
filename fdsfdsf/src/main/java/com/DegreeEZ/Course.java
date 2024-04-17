@@ -13,27 +13,29 @@ public class Course {
     private int number;
     private String name;
     private ArrayList<Prerequisite> prerequisites;
-    private int minGrade;
     private List<Semester> availability; 
     private int creditHours;
     private Semester semester;
 
     // Constructor
-    public Course(UUID id, String name, Subject subject, int number, int minGrade, ArrayList<Semester> availability, int creditHours) {
-        this.id = UUID.randomUUID(); // Generate a unique ID for each course
+    public Course(UUID id, String name, Subject subject, int number, ArrayList<Prerequisite> prerequisites, ArrayList<Semester> availability, int creditHours) {
+        this.id = id;
         this.name = name;
         this.subject = subject;
         this.number = number;
-        this.minGrade = minGrade;
         this.availability = availability;
         this.creditHours = creditHours;
 
-        this.prerequisites = new ArrayList<Prerequisite>();
+        this.prerequisites = prerequisites;
     }
 
     // Getters and setters
     public UUID getId() {
         return id;
+    }
+
+    public void setPrerequisites(ArrayList<Prerequisite> prerequisites) {
+        this.prerequisites = prerequisites;
     }
 
     public ArrayList<Prerequisite> getPrerequisites() {
@@ -62,14 +64,6 @@ public class Course {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getMinGrade() {
-        return minGrade;
-    }
-
-    public void setMinGrade(int minGrade) {
-        this.minGrade = minGrade;
     }
 
     public int getCreditHours() {
@@ -101,18 +95,11 @@ public class Course {
     }
 
     public String toString() {
-        return subject + " " + number + "(" + name + ")";
+        return subject + " " + number + " (" + name + ")";
     }
 
     public String courseCode() {
         return subject.toString() + number;
     }
 
-    public boolean prerequisitesSatisfied(ArrayList<CompletedCourse> completedCourses) {
-        ArrayList<Prerequisite> temp_prereqs = (ArrayList<Prerequisite>) prerequisites.clone();
-        for (CompletedCourse cc : completedCourses) {
-            temp_prereqs.removeIf(p -> p.getCourses().contains(cc.getCourse()));
-        }
-        return temp_prereqs.size() == 0;
-    }
 }

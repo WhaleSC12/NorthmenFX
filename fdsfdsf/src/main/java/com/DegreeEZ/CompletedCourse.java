@@ -4,11 +4,11 @@ package com.DegreeEZ;
 import java.util.UUID;
 
 public class CompletedCourse{
-    private int grade;
-    private Course course = null;
+    private String grade;
+    private Course course;
     private int semesterTaken; // Semester taken (1-8)
 
-    public CompletedCourse(UUID courseID, int grade, int semesterTaken) {
+    public CompletedCourse(UUID courseID, String grade, int semesterTaken) {
         for (Course c : CourseList.getCourses()) {
             if (c.getId().equals(courseID)) {
                 course = c;
@@ -21,13 +21,29 @@ public class CompletedCourse{
         this.semesterTaken = semesterTaken;
     }
 
-    // Getters and setters for the new fields
-    public int getGrade() {
+    public String getGrade() {
         return grade;
     }
 
+    public void setGrade(String grade) {
+        if (grade.length() ==1) {
+            this.grade = grade;
+        } else {
+            System.out.println("Grade must be A,B,C,D,F");
+        }
+    }
+
+
     public Course getCourse() {
         return course;
+    }
+
+    public int getSemesterTaken() {
+        return semesterTaken;
+    }
+
+    public void setSemesterTaken(int semesterTaken) {
+        this.semesterTaken = semesterTaken;
     }
 
     public String toString() {

@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 import java.net.URL;
 
 import java.io.IOException;
-import DegreeEZ.*;
+import com.DegreeEZ.*;
 
 /**
  * JavaFX App

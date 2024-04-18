@@ -1,42 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.StudentHomeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" />
-      <Pane layoutY="740.0" prefHeight="100.0" prefWidth="390.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
+      <ImageView fitHeight="700.0" fitWidth="350.0" style="-fx-opacity: .7;">
+         <image>
+            <Image url="@images/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="350.0">
+         <image>
+            <Image url="@images/status_bar.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="609.0" prefHeight="90.0" prefWidth="350.0" style="-fx-background-color: #333333; -fx-background-radius: 15 15 0 0;">
          <children>
-            <Line endX="-100.0" endY="100.0" layoutX="191.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-100.0" endY="100.0" layoutX="295.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-100.0" endY="100.0" layoutX="394.0" startX="-100.0" stroke="WHITE" />
-            <ImageView fx:id="profileButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="315.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <Line endX="4.0" layoutX="115.0" layoutY="45.0" startX="-60.0" stroke="WHITE" strokeWidth="2.0" style="-fx-rotate: 90;" />
+            <Line endX="4.0" layoutX="205.0" layoutY="45.0" startX="-60.0" stroke="WHITE" strokeWidth="2.0" style="-fx-rotate: 90;" />
+            <Line endX="4.0" layoutX="294.0" layoutY="45.0" startX="-60.0" stroke="WHITE" strokeWidth="2.0" style="-fx-rotate: 90;" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="28.0" layoutY="30.0">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/images/user.png" />
+                  <Image url="@images/home-icon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="semesterButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="218.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="117.0" layoutY="31.0">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/images/calendar.png" />
+                  <Image url="@images/search-icon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="searchButton" fitHeight="55.0" fitWidth="72.0" layoutX="115.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="206.0" layoutY="30.0">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/images/search.png" />
+                  <Image url="@images/calendar-icon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="homeButton" fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="293.0" layoutY="31.0">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/images/home.png" />
+                  <Image url="@images/person-icon.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Text layoutX="159.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[TEMPLATE]" />
+      <Label layoutX="107.0" layoutY="40.0" text="Student Home" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="74.0" text="Reminders:" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="217.0" text="Outstanding req:" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="374.0" text="Notes from Advisor:" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

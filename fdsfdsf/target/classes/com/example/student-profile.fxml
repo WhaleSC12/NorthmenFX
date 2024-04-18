@@ -1,117 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.StudentProfileController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fitHeight="822.0" fitWidth="495.0" layoutX="-45.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="700.0" fitWidth="350.0" style="-fx-opacity: .7;">
          <image>
-            <Image url="@../../../../../../../../Downloads/bg.jpeg" />
+            <Image url="@images/background.jpg" />
          </image>
       </ImageView>
-      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" />
-      <Pane layoutY="745.0" prefHeight="100.0" prefWidth="397.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
+      <ImageView fitHeight="40.0" fitWidth="350.0">
+         <image>
+            <Image url="@images/status_bar.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="609.0" prefHeight="90.0" prefWidth="350.0" style="-fx-background-color: #333333; -fx-background-radius: 15 15 0 0;">
          <children>
-            <Line endX="-100.0" endY="100.0" layoutX="191.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-100.0" endY="100.0" layoutX="295.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-100.0" endY="100.0" layoutX="394.0" startX="-100.0" stroke="WHITE" />
-            <ImageView fx:id="profileButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="315.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <Line endX="4.0" layoutX="115.0" layoutY="45.0" startX="-60.0" stroke="WHITE" strokeWidth="2.0" style="-fx-rotate: 90;" />
+            <Line endX="4.0" layoutX="205.0" layoutY="45.0" startX="-60.0" stroke="WHITE" strokeWidth="2.0" style="-fx-rotate: 90;" />
+            <Line endX="4.0" layoutX="294.0" layoutY="45.0" startX="-60.0" stroke="WHITE" strokeWidth="2.0" style="-fx-rotate: 90;" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="28.0" layoutY="30.0">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/images/user.png" />
+                  <Image url="@images/home-icon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="semesterButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="218.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="117.0" layoutY="31.0">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/images/calendar.png" />
+                  <Image url="@images/search-icon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="searchButton" fitHeight="55.0" fitWidth="72.0" layoutX="115.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="206.0" layoutY="30.0">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/images/search.png" />
+                  <Image url="@images/calendar-icon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="homeButton" fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="293.0" layoutY="31.0">
                <image>
-                  <Image url="@../../../../../target/classes/com/example/images/home.png" />
+                  <Image url="@images/person-icon.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Text id="firstName" fx:id="firstNameField" layoutX="48.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[First Name]">
+      <Label layoutX="122.0" layoutY="40.0" text="John Smith" textFill="WHITE">
          <font>
-            <Font name="AgencyFB-Bold" size="31.0" />
+            <Font name="Segoe UI Bold" size="20.0" />
          </font>
-      </Text>
-      <Text id="lastName" fx:id="lastNameField" layoutX="212.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[Last Name]">
+      </Label>
+      <Label layoutX="150.0" layoutY="106.0" text="Major:" textFill="WHITE">
          <font>
-            <Font name="AgencyFB-Bold" size="31.0" />
+            <Font name="Segoe UI Semibold" size="17.0" />
          </font>
-      </Text>
-      <Text layoutX="47.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Major:" wrappingWidth="38.026458861703304">
+      </Label>
+      <Label layoutX="156.0" layoutY="154.0" text="Year:" textFill="WHITE">
          <font>
-            <Font name="AgencyFB-Bold" size="18.0" />
+            <Font name="Segoe UI Semibold" size="17.0" />
          </font>
-      </Text>
-      <Text layoutX="45.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:" wrappingWidth="103.17517852783203">
+      </Label>
+      <Label layoutX="157.0" layoutY="203.0" text="GPA:" textFill="WHITE">
          <font>
-            <Font name="AgencyFB-Bold" size="18.0" />
+            <Font name="Segoe UI Semibold" size="17.0" />
          </font>
-      </Text>
-      <Text layoutX="45.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GPA:" wrappingWidth="103.17517852783203">
-         <font>
-            <Font name="AgencyFB-Bold" size="18.0" />
-         </font>
-      </Text>
-      <Text layoutX="176.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bio:">
-         <font>
-            <Font name="AgencyFB-Bold" size="31.0" />
-         </font>
-      </Text>
-      <TextArea id="bioField" fx:id="bioField" layoutX="30.0" layoutY="292.0" prefHeight="138.0" prefWidth="332.0">
-         <effect>
-            <DropShadow />
-         </effect>
-      </TextArea>
-      <ProgressBar id="degreeProgressBar" fx:id="degreeProgressBar" layoutX="63.0" layoutY="486.0" prefHeight="43.0" prefWidth="270.0" progress="0.0">
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-         <effect>
-            <DropShadow />
-         </effect>
-      </ProgressBar>
-      <Text layoutX="97.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Degree Progress:">
-         <font>
-            <Font name="AgencyFB-Bold" size="31.0" />
-         </font>
-      </Text>
-      <Text id="majorField" fx:id="majorField" layoutX="92.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="202.6887664794922" />
-      <Text id="yearField" fx:id="yearField" layoutX="90.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="202.6887664794922" />
-      <Text id="creditsEarned" fx:id="creditsEarned" layoutX="80.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[###]">
-         <font>
-            <Font name="AgencyFB-Bold" size="31.0" />
-         </font>
-      </Text>
-      <Text layoutX="174.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
-         <font>
-            <Font name="AgencyFB-Bold" size="31.0" />
-         </font>
-      </Text>
-      <Text id="creditsRequired" fx:id="creditsRequired" layoutX="213.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[###]">
-         <font>
-            <Font name="AgencyFB-Bold" size="31.0" />
-         </font>
-      </Text>
-      <Text id="gpaField" fx:id="gpaField" layoutX="85.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="202.6887664794922" />
+      </Label>
    </children>
 </AnchorPane>

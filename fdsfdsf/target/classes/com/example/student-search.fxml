@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -7,10 +10,15 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.StudentSearchController">
    <children>
+      <ImageView fitHeight="880.0" fitWidth="488.0" layoutX="-9.0" layoutY="-49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../target/classes/com/example/images/new-background.jpg" />
+         </image>
+      </ImageView>
       <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" />
-      <Pane layoutY="740.0" prefHeight="100.0" prefWidth="390.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
+      <Pane layoutY="745.0" prefHeight="100.0" prefWidth="397.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
          <children>
             <Line endX="-100.0" endY="100.0" layoutX="191.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-100.0" endY="100.0" layoutX="295.0" startX="-100.0" stroke="WHITE" />
@@ -37,5 +45,16 @@
             </ImageView>
          </children>
       </Pane>
+      <TableView layoutX="1.0" layoutY="169.0" prefHeight="498.0" prefWidth="390.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="Name" />
+          <TableColumn prefWidth="56.0" text="Subject" />
+          <TableColumn prefWidth="44.0" text="#" />
+            <TableColumn prefWidth="62.0" text="Credits" />
+            <TableColumn prefWidth="57.0" text="Rec. Sem" />
+            <TableColumn prefWidth="95.0" text="Register" />
+        </columns>
+      </TableView>
+      <TextField layoutX="55.0" layoutY="78.0" prefHeight="55.0" prefWidth="288.0" promptText="Search for Courses (by name or code)" />
    </children>
 </AnchorPane>

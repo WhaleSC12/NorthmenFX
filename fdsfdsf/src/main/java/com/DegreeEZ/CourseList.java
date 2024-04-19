@@ -46,7 +46,7 @@ public class CourseList {
 
     public static synchronized Course getCourseByCode(String code) {
         for (Course c : getCourses()) {
-            if (c.courseCode().equalsIgnoreCase(code.trim())) {
+            if (c.getCourseCode().equalsIgnoreCase(code.trim())) {
                 return c;
             }
         }

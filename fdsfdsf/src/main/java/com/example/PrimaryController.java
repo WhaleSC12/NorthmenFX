@@ -51,10 +51,10 @@ public class PrimaryController {
         
         if (user != null && isStudent) {
             loginMessage.setText("Login successful!");
-            navigateTo("student-home");
+            navigateTo("student-home.fxml");
         } else if (user != null && !isStudent) {
             loginMessage.setText("Login successful!");
-            navigateTo("advisor-home");
+            navigateTo("advisor-home.fxml");
         }
         
         else {

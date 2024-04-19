@@ -150,7 +150,7 @@ class DataLoader {
             UUID uuid = UUID.fromString(courseJSON.getString("course_uuid"));
             String name = courseJSON.getString("course_name");
             Subject subject = Subject.valueOf(courseJSON.getString("course_subject"));
-            int number = courseJSON.getInt("course_number");
+            String number = courseJSON.getString("course_number");
             int creditHours = courseJSON.getInt("creditHours");
             JSONArray availabilityArray = courseJSON.getJSONArray("availability");
             int reccomendedSemester = courseJSON.getInt("recommended_semester");
@@ -216,7 +216,7 @@ class DataLoader {
             UUID courseUuid = UUID.fromString(obj.getString("completedCourse_uuid"));
             String grade = obj.getString("completedCourse_grade");
             int semesterTaken = obj.getInt("completedCourse_semesterTaken");
-            Course course = findCourseByUUID(CourseList.getCourses(), courseUuid); // Assuming CourseList has a method to find courses by UUID
+            Course course = findCourseByUUID(CourseList.getCourses(), courseUuid); 
             if (course != null) {
                 completedCourses.add(new CompletedCourse(course.getId(), grade, semesterTaken));
             }
@@ -224,14 +224,6 @@ class DataLoader {
         return completedCourses;
     }
 
-    private static Course getCourseFromCode(ArrayList<Course> courses, String code) {
-        for (Course c : courses) {
-            if (c.courseCode().equalsIgnoreCase(code.trim())) {
-                return c;
-            }
-        }
-        return null;
-    }
 
 
     }

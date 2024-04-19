@@ -6,8 +6,8 @@
         "course_number": "145",
         "course_prereq": [],
         "creditHours": 4,
-        "availability": ["FALL","SPRING"],
-        "reccomended_semester": 1,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 1,
         "isElective": false
     },
     {
@@ -17,7 +17,9 @@
         "course_number": "141",
         "course_prereq": [],
         "creditHours": 4,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 1,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca656",
@@ -26,8 +28,9 @@
         "course_number": "101",
         "course_prereq": [],
         "creditHours": 3,
-        "availability": ["FALL","SPRING"]
-        
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 1,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca655",
@@ -36,21 +39,9 @@
         "course_number": "190",
         "course_prereq": [],
         "creditHours": 1,
-        "availability": ["FALL"]  
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca654",
-        "course_name": "Rhetoric and Composition",
-        "course_subject": "ENGL",
-        "course_number": "102",
-        "course_prereq": [
-            {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca656",
-                "minGrade": "C"
-            }
-        ],
-        "creditHours": 3,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL"],
+        "recommended_semester": 1,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca653",
@@ -64,7 +55,9 @@
             }
         ],
         "creditHours": 4,
-        "availability": ["FALL","SPRING","SUMMER"]
+        "availability": ["FALL", "SPRING", "SUMMER"],
+        "recommended_semester": 2,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca652",
@@ -78,7 +71,9 @@
             }
         ],
         "creditHours": 3,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 2,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca651",
@@ -92,7 +87,9 @@
             }
         ],
         "creditHours": 3,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 2,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca650",
@@ -110,7 +107,9 @@
             }
         ],
         "creditHours": 4,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 2,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca649",
@@ -124,7 +123,9 @@
             }
         ],
         "creditHours": 1,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 2,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca648",
@@ -138,7 +139,9 @@
             }
         ],
         "creditHours": 3,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 3,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca647",
@@ -156,7 +159,9 @@
             }
         ],
         "creditHours": 3,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 3,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca646",
@@ -174,7 +179,9 @@
             }
         ],
         "creditHours": 3,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 3,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca645",
@@ -192,7 +199,9 @@
             }
         ],
         "creditHours": 3,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 3,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca644",
@@ -210,7 +219,9 @@
             }
         ],
         "creditHours": 1,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 3,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca643",
@@ -219,205 +230,155 @@
         "course_number": "140",
         "course_prereq": [],
         "creditHours": 3,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 3,
+        "isElective": false
     },
     {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca659",
-        "course_name": "Web Applications",
+        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca642",
+        "course_name": "Intro. to Comp. Arch.",
         "course_subject": "CSCE",
-        "course_number": "240",
+        "course_number": "212",
         "course_prereq": [
             {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca622",
-                "minGrade": "B"
+                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca648",
+                "minGrade": "D"
             },
             {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca622",
-                "minGrade": "C"
-            },
-            {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca629",
-                "minGrade": "C"
-            }
-        ],
-        "creditHours": 4,
-        "availability": ["FALL", "SPRING"]
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca660",
-        "course_name": "Data Structures",
-        "course_subject": "CSCE",
-        "course_number": "245",
-        "course_prereq": [
-            {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca622",
-                "minGrade": "B"
+                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca658",
+                "minGrade": "D"
             }
         ],
         "creditHours": 3,
-        "availability": ["FALL", "SPRING", "SUMMER"]
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 4,
+        "isElective": false
     },
     {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca661",
+        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca641",
+        "course_name": "Software Engineering",
+        "course_subject": "CSCE",
+        "course_number": "247",
+        "course_prereq": [
+            {
+                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca650",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 3,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 4,
+        "isElective": false
+    },
+    {
+        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca640",
+        "course_name": "Vector Calculus",
+        "course_subject": "MATH",
+        "course_number": "241",
+        "course_prereq": [
+            {
+                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca653",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 3,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 4,
+        "isElective": false
+    },
+    {
+        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca639",
         "course_name": "Operating Systems",
+        "course_subject": "CSCE",
+        "course_number": "311",
+        "course_prereq": [
+            {
+                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca647",
+                "minGrade": "C"
+            },
+            {
+                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca642",
+                "minGrade": "D"
+            }
+        ],
+        "creditHours": 3,
+        "availability": ["FALL"],
+        "recommended_semester": 5,
+        "isElective": false
+    },
+    {
+        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca638",
+        "course_name": "Programming Language Structures",
+        "course_subject": "CSCE",
+        "course_number": "330",
+        "course_prereq": [
+            {
+                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca647",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 3,
+        "availability": ["FALL"],
+        "recommended_semester": 5,
+        "isElective": false
+    },
+    {
+        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca637",
+        "course_name": "Data Structures & Algorithms",
         "course_subject": "CSCE",
         "course_number": "350",
         "course_prereq": [
             {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca660",
-                "minGrade": "B"
-            }
-        ],
-        "creditHours": 4,
-        "availability": ["FALL", "SPRING"]
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca662",
-        "course_name": "Computer Networks",
-        "course_subject": "CSCE",
-        "course_number": "355",
-        "course_prereq": [
-            {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca661",
-                "minGrade": "B"
-            }
-        ],
-        "creditHours": 3,
-        "availability": ["FALL"]
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca663",
-        "course_name": "Database Systems",
-        "course_subject": "CSCE",
-        "course_number": "360",
-        "course_prereq": [
-            {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca660",
+                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca647",
                 "minGrade": "C"
             }
         ],
         "creditHours": 3,
-        "availability": ["SPRING"]
+        "availability": ["FALL"],
+        "recommended_semester": 5,
+        "isElective": false
     },
     {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca664",
-        "course_name": "Software Testing",
+        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca636",
+        "course_name": "Professional Issues in Computer Science Engineering",
         "course_subject": "CSCE",
-        "course_number": "365",
+        "course_number": "390",
+        "course_prereq": [],
+        "creditHours": 1,
+        "availability": ["FALL"],
+        "recommended_semester": 5,
+        "isElective": false
+    },
+    {
+        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca635",
+        "course_name": "Introduction to Computer Networks",
+        "course_subject": "CSCE",
+        "course_number": "416",
         "course_prereq": [
             {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca663",
-                "minGrade": "B"
+                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca650",
+                "minGrade": "C"
             }
         ],
         "creditHours": 3,
-        "availability": ["SUMMER", "FALL"]
+        "availability": ["SPRING"],
+        "recommended_semester": 6,
+        "isElective": false
     },
     {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca665",
-        "course_name": "Artificial Intelligence",
-        "course_subject": "CSCE",
-        "course_number": "370",
+        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca634",
+        "course_name": "Statistics for Engineers",
+        "course_subject": "STAT",
+        "course_number": "509",
         "course_prereq": [
             {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca660",
-                "minGrade": "B"
-            },
-            {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca662",
-                "minGrade": "B"
+                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca653",
+                "minGrade": "C"
             }
         ],
         "creditHours": 3,
-        "availability": ["FALL"]
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca666",
-        "course_name": "Machine Learning",
-        "course_subject": "CSCE",
-        "course_number": "375",
-        "course_prereq": [
-            {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca665",
-                "minGrade": "A"
-            }
-        ],
-        "creditHours": 3,
-        "availability": ["SPRING"]
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca667",
-        "course_name": "Cybersecurity Fundamentals",
-        "course_subject": "CSCE",
-        "course_number": "380",
-        "course_prereq": [
-            {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca664",
-                "minGrade": "B"
-            }
-        ],
-        "creditHours": 3,
-        "availability": ["FALL", "SPRING"]
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca668",
-        "course_name": "Advanced Algorithms",
-        "course_subject": "CSCE",
-        "course_number": "440",
-        "course_prereq": [
-            {
-                "prereq_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca666",
-                "minGrade": "A"
-            }
-        ],
-        "creditHours": 3,
-        "availability": ["FALL"]
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca669",
-        "course_name": "Introduction to Cloud Computing",
-        "course_subject": "CSCE",
-        "course_number": "475",
-        "course_prereq": [],
-        "creditHours": 3,
-        "availability": ["SPRING", "FALL"]
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca670",
-        "course_name": "Blockchain Fundamentals",
-        "course_subject": "CSCE",
-        "course_number": "485",
-        "course_prereq": [],
-        "creditHours": 3,
-        "availability": ["FALL"]
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca672",
-        "course_name": "Natural Disasters",
-        "course_subject": "GEOL",
-        "course_number": "110",
-        "course_prereq": [],
-        "creditHours": 3,
-        "availability": ["SPRING", "FALL"],
-        "isElective": true
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca673",
-        "course_name": "Modern World History",
-        "course_subject": "HIST",
-        "course_number": "102",
-        "course_prereq": [],
-        "creditHours": 3,
-        "availability": ["SPRING", "FALL", "SUMMER"],
-        "isElective": true
-    },
-    {
-        "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca674",
-        "course_name": "Environmental Geology",
-        "course_subject": "GEOL",
-        "course_number": "120",
-        "course_prereq": [],
-        "creditHours": 3,
-        "availability": ["FALL"]
+        "availability": ["SPRING"],
+        "recommended_semester": 6,
+        "isElective": false
     }
 ]

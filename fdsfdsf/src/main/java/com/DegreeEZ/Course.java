@@ -10,7 +10,7 @@ import com.DegreeEZ.Prerequisite;
 public class Course {
     private UUID id;
     private Subject subject;
-    private int number;
+    private String number;
     private String name;
     private ArrayList<Prerequisite> prerequisites;
     private List<Semester> availability; 
@@ -19,7 +19,7 @@ public class Course {
     private boolean isElective;
 
     // Constructor
-    public Course(UUID id, String name, Subject subject, int number, ArrayList<Prerequisite> prerequisites, ArrayList<Semester> availability, int creditHours, int recommendedSemester, boolean isElective) {
+    public Course(UUID id, String name, Subject subject, String number, ArrayList<Prerequisite> prerequisites, ArrayList<Semester> availability, int creditHours, int recommendedSemester, boolean isElective) {
         this.id = id;
         this.name = name;
         this.subject = subject;
@@ -69,11 +69,11 @@ public class Course {
         this.subject = subject;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
@@ -110,7 +110,7 @@ public class Course {
         return subject + " " + number + " (" + name + ")";
     }
 
-    public String courseCode() {
+    public String getCourseCode() {
         return subject.toString() + number;
     }
 

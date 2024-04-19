@@ -21,8 +21,7 @@ public class StudentSearchController {
     @FXML private TableColumn<Course, Integer> recommendedSemesterColumn;
     @FXML private TableColumn<Course, Void> registerColumn;
 
-    private Student currentStudent;
-    private ArrayList<Course> searchResults;
+
 
     @FXML
     public void initialize() {
@@ -70,7 +69,7 @@ public class StudentSearchController {
             // Check if course subject or name contains the search text
             if (c.getSubject().name().toLowerCase().contains(searchText) ||
                 c.getName().toLowerCase().contains(searchText) ||
-                c.courseCode().toLowerCase().contains(searchText)) {
+                c.getCourseCode().toLowerCase().contains(searchText)) {
                 results.add(c);
             }
         }

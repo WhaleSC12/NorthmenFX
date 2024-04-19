@@ -20,5 +20,6 @@ public enum Subject {
     FAMS,
     BIOL,
     CLIM,
-    CS
+    CS,
+    CHEM
 }

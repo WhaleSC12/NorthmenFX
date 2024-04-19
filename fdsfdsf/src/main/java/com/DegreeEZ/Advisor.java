@@ -55,10 +55,24 @@ public class Advisor extends User {
                 if (c == null) {
                     return;
                 }
-                System.out.println("Enter Grade");
-                int grade = scanner.nextInt();
+                System.out.println("Enter Grade (A,B,C,D,F)");
+                String grade = scanner.nextLine();
+                String gradeChar;
+                if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("F")) {
+                    gradeChar = grade;
+                } else {
+                    gradeChar = "E fo' Error";
+                    System.out.println(gradeChar);
+                }
                 System.out.println("Enter semester taken (1-8):");
-                student.getCompletedCourses().add(new CompletedCourse(c.getId(), grade));
+                int semesterTaken;
+                if (scanner.nextInt() >= 1 && scanner.nextInt() <= 8) {
+                    semesterTaken = scanner.nextInt();
+                } else {
+                    semesterTaken = 0;
+                    System.out.println("Invalid semester. Enter 1-8");
+                }
+                student.getCompletedCourses().add(new CompletedCourse(c.getId(), gradeChar, semesterTaken));
                 System.out.println("Added " + c);
             case 3:
                 System.out.println("Enter the course code to add to required (Ex: CSCE101)");

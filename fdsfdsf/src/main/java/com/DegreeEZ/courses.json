@@ -6,7 +6,8 @@
         "course_number": "145",
         "course_prereq": [],
         "creditHours": 4,
-        "availability": ["FALL","SPRING"]
+        "availability": ["FALL","SPRING"],
+        "reccomended_semester": 1
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca657",

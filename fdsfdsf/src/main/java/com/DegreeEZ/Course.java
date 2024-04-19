@@ -15,16 +15,17 @@ public class Course {
     private ArrayList<Prerequisite> prerequisites;
     private List<Semester> availability; 
     private int creditHours;
-    private Semester semester;
+    private int reccomendedSemester;
 
     // Constructor
-    public Course(UUID id, String name, Subject subject, int number, ArrayList<Prerequisite> prerequisites, ArrayList<Semester> availability, int creditHours) {
+    public Course(UUID id, String name, Subject subject, int number, ArrayList<Prerequisite> prerequisites, ArrayList<Semester> availability, int creditHours, int recommendedSemester) {
         this.id = id;
         this.name = name;
         this.subject = subject;
         this.number = number;
         this.availability = availability;
         this.creditHours = creditHours;
+        this.reccomendedSemester = recommendedSemester;
 
         this.prerequisites = prerequisites;
     }
@@ -40,6 +41,14 @@ public class Course {
 
     public ArrayList<Prerequisite> getPrerequisites() {
         return prerequisites;
+    }
+
+    public void setReccomendedSemester(int recSemester) {
+        this.reccomendedSemester = recSemester;
+    }
+
+    public int getReccomendedSemester() {
+        return reccomendedSemester;
     }
 
     public Subject getSubject() {
@@ -74,13 +83,6 @@ public class Course {
         this.creditHours = creditHours;
     }
 
-    public Semester getSemester() {
-        return semester;
-    }
-
-    public void setSemester(Semester semester) {
-        this.semester = semester;
-    }
 
     public List<Semester> getAvailability() {
         return availability;

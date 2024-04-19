@@ -154,12 +154,13 @@ class DataLoader {
             int number = courseJSON.getInt("course_number");
             int creditHours = courseJSON.getInt("creditHours");
             JSONArray availabilityArray = courseJSON.getJSONArray("availability");
+            int reccomendedSemester = courseJSON.getInt("recommended_semester");
             ArrayList<Semester> availability = new ArrayList<>();
             for (int j = 0; j < availabilityArray.length(); j++) {
                 availability.add(Semester.valueOf(availabilityArray.getString(j).toUpperCase()));
             }
 
-            Course course = new Course(uuid, name, subject, number, new ArrayList<>(), availability, creditHours);
+            Course course = new Course(uuid, name, subject, number, new ArrayList<>(), availability, creditHours, reccomendedSemester);
             courseMap.put(uuid, course);
             courses.add(course);
         }

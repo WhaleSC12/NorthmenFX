@@ -1,8 +1,6 @@
 package com.DegreeEZ;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.UUID;
 
 public class Major {
@@ -26,6 +24,14 @@ public class Major {
 
     public UUID getMajorID() {
         return majorID;
+    }
+
+    public ArrayList<Course> getRequiredCourseList() {
+        ArrayList<Course> requiredCourseList = new ArrayList<>();
+        for (HashMap.Entry<Course, String> entry : requiredCourses.entrySet()) {
+            requiredCourseList.add(entry.getKey());
+        }
+        return requiredCourseList;
     }
 
     public void setMajorID(UUID majorID) {

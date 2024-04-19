@@ -73,12 +73,24 @@ public class Student extends User {
         this.completedCourses = completedCourses;
     }
 
+    public void addCompletedCourse(CompletedCourse completedCourse) {
+        completedCourses.add(completedCourse);
+    }
+
     public ArrayList<Course> getEnrolledCourses() {
         return enrolledCourses;
     }
 
     public void setEnrolledCourses(ArrayList<Course> enrolledCourses) {
         this.enrolledCourses = enrolledCourses;
+    }
+
+    public void addEnrolledCourse(Course enrolledCourse) {
+        enrolledCourses.add(enrolledCourse);
+    }
+
+    public void addOutstandingRequirement(Course outstandingRequirement) {
+        enrolledCourses.add(outstandingRequirement);
     }
 
     public void setOutstandingRequirements(ArrayList<Course> outstandingRequirements) {
@@ -107,7 +119,7 @@ public class Student extends User {
 
     public int getTotalRequiredCredits() {
         int credits = 0;
-        for (Course c : major.getRequiredCourses()) {
+        for (Course c : major.getRequiredCourseList()) {
             credits += c.getCreditHours();
         }
         credits += major.getElectiveCreditsRequired();
@@ -170,7 +182,7 @@ public class Student extends User {
         } else if (this.semestersCompleted <= 7) {
             return "Senior";
         } else {
-            return "Graduate"; // Assuming this for semesters greater than 7
+            return "Graduate"; 
         }
     }
 
@@ -216,5 +228,10 @@ public class Student extends User {
 
     public String toString() {
         return getFirstName() + " " + getLastName();
+    }
+
+
+    public void setAdvisorNote(Student student, String note) {
+        student.addAdvisorNote(note);
     }
 }

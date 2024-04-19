@@ -57,6 +57,7 @@ public class Advisor extends User {
                 }
                 System.out.println("Enter Grade");
                 int grade = scanner.nextInt();
+                System.out.println("Enter semester taken (1-8):");
                 student.getCompletedCourses().add(new CompletedCourse(c.getId(), grade));
                 System.out.println("Added " + c);
             case 3:
@@ -87,16 +88,18 @@ public class Advisor extends User {
     }
 
     public void addCompletedCourse(Student student, CompletedCourse completedCourse) {
-        // Adds a completed course to the specified student's degree progress
+        student.addCompletedCourse(completedCourse);
     }
 
 
     public void registerClass(Student student, Course course) {
-        // Adds a 'currently enrolled' course to the specified student's degree progress
+        student.addEnrolledCourse(course);
     }
 
+
+
     public void addRequiredCourse(Student student, Course course) {
-        // Adds a 'required' course to the specified student's degree progress
+        student.addOutstandingRequirement(course);
     }
 
     public List<UUID> getStudentUuids() {
@@ -108,7 +111,7 @@ public class Advisor extends User {
     }
 
     public static void addAdvisorNoteToStudent(Student student, String note) {
-        student.setAdvisorNote(note);
+        student.setAdvisorNote(student, note);
     }
 
     public List<Student> getStudents() {

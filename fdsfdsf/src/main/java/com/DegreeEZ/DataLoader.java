@@ -4,7 +4,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import com.DegreeEZ.Prerequisite;
-import com.google.gson.JsonArray;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -15,7 +14,7 @@ import java.util.UUID;
 
 class DataLoader {
     public static ArrayList<Student> loadStudents(String filePath) {
-        ArrayList<Course> allCourses = loadCourses("courses.json"); // Assuming courses are loaded here
+        ArrayList<Course> allCourses = loadCourses("fdsfdsf/src/main/java/com/DegreeEZ/courses.json"); 
         String jsonString = readFileAsString(filePath);
         if (jsonString == null) {
             return null;
@@ -32,6 +31,7 @@ class DataLoader {
             String password = studentJSON.getString("student_password");
             UUID majorUUID = UUID.fromString(studentJSON.getString("student_major"));
             int semestersCompleted = studentJSON.getInt("semestersCompleted"); 
+            String bio = studentJSON.getString("bio");
 
 
             JSONArray completedCoursesArray = studentJSON.getJSONArray("completedCourses");
@@ -40,7 +40,7 @@ class DataLoader {
             JSONArray enrolledClassesArray = studentJSON.getJSONArray("enrolledClasses");
             ArrayList<Course> enrolledCourses = loadCoursesFromJSONArray(enrolledClassesArray);
 
-            JsonArray outstandingReqArray = studentJSON.getJSONArray("outstandingReq");
+            JSONArray outstandingReqArray = studentJSON.getJSONArray("outstandingReq");
             ArrayList<Course> outstandingReqs = loadCoursesFromJSONArray(outstandingReqArray);
 
             UUID advisorUUID = UUID.fromString(studentJSON.getString("advisor"));
@@ -50,7 +50,7 @@ class DataLoader {
                 advisorNotes.add(advisorNotesJSON.getString(j));
             }
 
-            students.add(new Student(studentUuid, firstName, lastName, username, password, majorUUID, completedCourses, enrolledCourses, outstandingReqs, advisorUUID, advisorNotes,semestersCompleted));
+            students.add(new Student(studentUuid, firstName, lastName, username, password, majorUUID, completedCourses, enrolledCourses, outstandingReqs, advisorUUID, advisorNotes,semestersCompleted,bio));
         }
         return students;
     }
@@ -85,7 +85,7 @@ class DataLoader {
     }
 
     public static ArrayList<Major> loadMajors(String fileName) {
-        ArrayList<Course> allCourses = loadCourses("courses.json"); // Assume courses are stored in courses.json
+        ArrayList<Course> allCourses = loadCourses("fdsfdsf/src/main/java/com/DegreeEZ/courses.json"); 
         String jsonString = readFileAsString(fileName);
         if (jsonString == null) {
             return null;

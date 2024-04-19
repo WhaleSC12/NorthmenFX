@@ -12,12 +12,12 @@
    <children>
       <ImageView fitHeight="700.0" fitWidth="350.0" style="-fx-opacity: .7;">
          <image>
-            <Image url="@images/background.jpg" />
+            <Image url="@../images/background.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="40.0" fitWidth="350.0">
          <image>
-            <Image url="@images/status_bar.png" />
+            <Image url="@../images/status_bar.png" />
          </image>
       </ImageView>
       <Pane layoutY="609.0" prefHeight="90.0" prefWidth="350.0" style="-fx-background-color: #333333; -fx-background-radius: 15 15 0 0;">
@@ -27,69 +27,44 @@
             <Line endX="4.0" layoutX="294.0" layoutY="45.0" startX="-60.0" stroke="WHITE" strokeWidth="2.0" style="-fx-rotate: 90;" />
             <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="28.0" layoutY="30.0">
                <image>
-                  <Image url="@images/home-icon.png" />
+                  <Image url="@../images/home-icon.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="117.0" layoutY="31.0">
                <image>
-                  <Image url="images/search-icon.png" />
+                  <Image url="@../images/search-icon.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="206.0" layoutY="30.0">
                <image>
-                  <Image url="@images/calendar-icon.png" />
+                  <Image url="@../images/calendar-icon.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="293.0" layoutY="31.0">
                <image>
-                  <Image url="@images/person-icon.png" />
+                  <Image url="@../images/person-icon.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Label layoutX="56.0" layoutY="40.0" text="View Eight Semester Plan" textFill="WHITE">
+      <Label layoutX="107.0" layoutY="40.0" text="Advisor Home" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="132.0" layoutY="77.0" text="Semester 1:" textFill="WHITE">
+      <Label layoutX="14.0" layoutY="74.0" text="Upcoming Appointments:" textFill="WHITE">
          <font>
-            <Font name="Segoe UI Bold" size="16.0" />
+            <Font name="Segoe UI Semibold" size="17.0" />
          </font>
       </Label>
-      <Label layoutX="132.0" layoutY="103.0" text="Semester 2:" textFill="WHITE">
+      <Label layoutX="14.0" layoutY="217.0" text="Messages:" textFill="WHITE">
          <font>
-            <Font name="Segoe UI Bold" size="16.0" />
+            <Font name="Segoe UI Semibold" size="17.0" />
          </font>
       </Label>
-      <Label layoutX="131.0" layoutY="129.0" text="Semester 3:" textFill="WHITE">
+      <Label layoutX="14.0" layoutY="374.0" text="Struggling Students:" textFill="WHITE">
          <font>
-            <Font name="Segoe UI Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="132.0" layoutY="155.0" text="Semester 4:" textFill="WHITE">
-         <font>
-            <Font name="Segoe UI Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="132.0" layoutY="181.0" text="Semester 5:" textFill="WHITE">
-         <font>
-            <Font name="Segoe UI Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="132.0" layoutY="207.0" text="Semester 6:" textFill="WHITE">
-         <font>
-            <Font name="Segoe UI Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="131.0" layoutY="233.0" text="Semester 7:" textFill="WHITE">
-         <font>
-            <Font name="Segoe UI Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="132.0" layoutY="259.0" text="Semester 8:" textFill="WHITE">
-         <font>
-            <Font name="Segoe UI Bold" size="16.0" />
+            <Font name="Segoe UI Semibold" size="17.0" />
          </font>
       </Label>
    </children>

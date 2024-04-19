@@ -23,7 +23,7 @@ public class PrimaryController {
     private TextField passwordField;
 
     @FXML
-    private Button signInButton;
+    private Button loginButton;
 
     @FXML
     private Hyperlink signUpLink;

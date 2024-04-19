@@ -2,11 +2,13 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -14,14 +16,9 @@
    <children>
       <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0">
          <children>
-            <Text layoutX="-84.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to" textAlignment="CENTER" wrappingWidth="390.0">
-               <font>
-                  <Font name="AgencyFB-Bold" size="43.0" />
-               </font>
-            </Text>
-            <ImageView fitHeight="58.0" fitWidth="168.0" layoutX="211.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="840.0" fitWidth="390.0" style="-fx-opacity: .7;">
                <image>
-                  <Image url="@degreeEZ-logo.png" />
+                  <Image url="@../../../../../../../NorthmenFXIntellij/NorthmenFX/fdsfdsf/src/main/resources/com/example/images/background.jpg" />
                </image>
             </ImageView>
             <Text layoutX="16.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", your all-in-one course registration tool." textAlignment="CENTER" wrappingWidth="390.0">
@@ -40,6 +37,40 @@
             <TextField fx:id="passwordField" layoutX="71.0" layoutY="326.0" prefHeight="49.0" prefWidth="235.0" promptText="Password" />
             <Button fx:id="signInButton" layoutX="161.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleSignIn" text="Sign in" />
             <Text id="loginMessage" fx:id="loginMessage" layoutX="50.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <TextField fx:id="usernameField" layoutX="30.0" layoutY="243.0" prefHeight="49.0" prefWidth="235.0" promptText="USERNAME" style="-fx-region-background: 1;" />
+            <TextField fx:id="passwordField" layoutX="30.0" layoutY="307.0" prefHeight="49.0" prefWidth="235.0" promptText="PASSWORD" style="-fx-region-background: 1;" />
+            <ImageView fitHeight="49.0" fitWidth="390.0" layoutX="-1.0">
+               <image>
+                  <Image url="@../../../../../../../NorthmenFXIntellij/NorthmenFX/fdsfdsf/src/main/resources/com/example/images/status-bar.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="109.0" layoutY="816.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Hyperlink id="sign-up-link" fx:id="signUpLink" layoutX="234.0" layoutY="800.0" onAction="#handleSignUp" text="Sign up!" textFill="#00a1ff">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="loginButton" alignment="CENTER" layoutX="275.0" layoutY="372.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #333333; -fx-background-radius: 25;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="30.0" layoutY="163.0" text="DegreeEZ Login" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Black" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="198.0" text="Please login to continue to DegreeEZ." textFill="#bebebe">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Label>
+            <Line endX="200.0" layoutX="133.0" layoutY="279.0" startX="-100.0" stroke="WHITE" strokeWidth="1.5" />
+            <Line endX="200.0" layoutX="134.0" layoutY="344.0" startX="-100.0" stroke="WHITE" strokeWidth="1.5" />
          </children>
       </AnchorPane>
    </children>

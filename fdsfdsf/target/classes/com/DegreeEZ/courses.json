@@ -7,7 +7,8 @@
         "course_prereq": [],
         "creditHours": 4,
         "availability": ["FALL","SPRING"],
-        "reccomended_semester": 1
+        "reccomended_semester": 1,
+        "isElective": false
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca657",
@@ -397,7 +398,8 @@
         "course_number": "110",
         "course_prereq": [],
         "creditHours": 3,
-        "availability": ["SPRING", "FALL"]
+        "availability": ["SPRING", "FALL"],
+        "isElective": true
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca673",
@@ -406,7 +408,8 @@
         "course_number": "102",
         "course_prereq": [],
         "creditHours": 3,
-        "availability": ["SPRING", "FALL", "SUMMER"]
+        "availability": ["SPRING", "FALL", "SUMMER"],
+        "isElective": true
     },
     {
         "course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca674",

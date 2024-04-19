@@ -177,7 +177,6 @@ public class SignUpController {
         Advisor selectedAdvisor = advisorDropdown.getSelectionModel().getSelectedItem();
 
         int semestersTaken = 0;
-        // need  to fix this to count # of completed courses bc of registering for spring semesters
         if (selectedYear.equals("Freshman")) {
             semestersTaken = 0;
         } else if (selectedYear.equals("Sophomore")) {

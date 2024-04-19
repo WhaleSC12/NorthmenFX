@@ -16,9 +16,10 @@ public class Course {
     private List<Semester> availability; 
     private int creditHours;
     private int reccomendedSemester;
+    private boolean isElective;
 
     // Constructor
-    public Course(UUID id, String name, Subject subject, int number, ArrayList<Prerequisite> prerequisites, ArrayList<Semester> availability, int creditHours, int recommendedSemester) {
+    public Course(UUID id, String name, Subject subject, int number, ArrayList<Prerequisite> prerequisites, ArrayList<Semester> availability, int creditHours, int recommendedSemester, boolean isElective) {
         this.id = id;
         this.name = name;
         this.subject = subject;
@@ -26,6 +27,7 @@ public class Course {
         this.availability = availability;
         this.creditHours = creditHours;
         this.reccomendedSemester = recommendedSemester;
+        this.isElective = isElective;
 
         this.prerequisites = prerequisites;
     }
@@ -33,6 +35,14 @@ public class Course {
     // Getters and setters
     public UUID getId() {
         return id;
+    }
+
+    public boolean getIsElective() {
+        return isElective;
+    }
+
+    public void setElective(boolean torf) {
+        isElective = torf;
     }
 
     public void setPrerequisites(ArrayList<Prerequisite> prerequisites) {

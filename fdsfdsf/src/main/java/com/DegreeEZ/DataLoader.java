@@ -14,7 +14,6 @@ import java.util.UUID;
 
 class DataLoader {
     public static ArrayList<Student> loadStudents(String filePath) {
-        ArrayList<Course> allCourses = loadCourses("fdsfdsf/src/main/java/com/DegreeEZ/courses.json"); 
         String jsonString = readFileAsString(filePath);
         if (jsonString == null) {
             return null;
@@ -155,12 +154,13 @@ class DataLoader {
             int creditHours = courseJSON.getInt("creditHours");
             JSONArray availabilityArray = courseJSON.getJSONArray("availability");
             int reccomendedSemester = courseJSON.getInt("recommended_semester");
+            boolean isElective = courseJSON.getBoolean("isElective");
             ArrayList<Semester> availability = new ArrayList<>();
             for (int j = 0; j < availabilityArray.length(); j++) {
                 availability.add(Semester.valueOf(availabilityArray.getString(j).toUpperCase()));
             }
 
-            Course course = new Course(uuid, name, subject, number, new ArrayList<>(), availability, creditHours, reccomendedSemester);
+            Course course = new Course(uuid, name, subject, number, new ArrayList<>(), availability, creditHours, reccomendedSemester, isElective);
             courseMap.put(uuid, course);
             courses.add(course);
         }

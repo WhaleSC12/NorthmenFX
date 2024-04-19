@@ -28,7 +28,7 @@
          </image>
       </ImageView>
       <Text layoutX="33.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your information and click 'Continue'" />
-      <CheckBox id="advisor-checkbox" fx:="advisorcheckbox" layoutX="87.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleAdvisorCheck" text="Check if you are an Advisor">
+      <CheckBox id="advisor-checkbox" fx:id="advisorcheckbox" layoutX="87.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleAdvisorCheck" text="Check if you are an Advisor">
          <font>
             <Font name="AgencyFB-Bold" size="13.0" />
          </font>

@@ -37,6 +37,5 @@
             </ImageView>
          </children>
       </Pane>
-      <Text layoutX="159.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[TEMPLATE]" />
    </children>
 </AnchorPane>

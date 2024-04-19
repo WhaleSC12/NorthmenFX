@@ -75,7 +75,7 @@ public class PrimaryController {
     private void navigateTo(String fxmlFile) {
         System.out.println("Navigating to " + fxmlFile);
         try {
-            App.setRoot("/com/example/"+ fxmlFile);
+            App.setRoot(fxmlFile);
         } catch (IOException e) {
             e.printStackTrace();
             loginMessage.setText("Failed to load the view: " + fxmlFile);

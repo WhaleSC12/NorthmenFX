@@ -16,6 +16,32 @@ public class Prerequisite {
         courseRequirements.put(course,minGrade);
     }
 
+    public String printPrerequisites() {
+        if (courseRequirements.isEmpty()) {
+            return "No prerequisites.";
+        }
+        
+        StringBuilder sb = new StringBuilder();
+        for (HashMap.Entry<Course, String> entry : courseRequirements.entrySet()) {
+            if (sb.length() > 0) {
+                sb.append(", "); // Separator between courses
+            }
+            Course course = entry.getKey();
+            String grade = entry.getValue();
+            sb.append(course.getName())
+              .append(" (")
+              .append(course.getSubject())
+              .append(" ")
+              .append(course.getNumber())
+              .append(") - Min Grade: ")
+              .append(grade);
+        }
+        return sb.toString();
+    }
+
+
+    
+
     public String toString() {
         StringBuilder result = new StringBuilder();
         Set<HashMap.Entry<Course, String>> entries = courseRequirements.entrySet();

@@ -53,6 +53,29 @@ public class Course {
         return prerequisites;
     }
 
+    public String printPrerequisites() {
+        if (prerequisites == null || prerequisites.isEmpty()) {
+            return "No prerequisites.";
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (Prerequisite prereq : prerequisites) {
+            if (sb.length() > 0) {
+                sb.append("\n");
+            }
+            Course prereqCourse = prereq.getCourse();
+            sb.append(prereq.getMinGrade())
+              .append(" in ")
+              .append(prereqCourse.getName())
+              .append(" (")
+              .append(prereqCourse.getSubject())
+              .append(" ")
+              .append(prereqCourse.getNumber())
+              .append(")");
+        }
+        return sb.toString();
+    }
+
     public void setReccomendedSemester(int recSemester) {
         this.reccomendedSemester = recSemester;
     }

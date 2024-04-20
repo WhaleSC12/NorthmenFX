@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -45,16 +46,17 @@
             </ImageView>
          </children>
       </Pane>
-      <TableView fx:id="searchResultsTable" layoutX="1.0" layoutY="169.0" prefHeight="498.0" prefWidth="390.0">
+      <TableView fx:id="searchResultsTable" layoutX="1.0" layoutY="169.0" prefHeight="183.0" prefWidth="390.0">
         <columns>
-            <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
-          <TableColumn fx:id="subjectColumn" prefWidth="56.0" text="Subject" />
-          <TableColumn fx:id="numberColumn" prefWidth="44.0" text="#" />
-            <TableColumn fx:id="creditsColumn" prefWidth="62.0" text="Credits" />
-            <TableColumn fx:id="recommendedSemesterColumn" prefWidth="57.0" text="Rec. Sem" />
-            <TableColumn fx:id="registerColumn" prefWidth="95.0" text="Register" />
+            <TableColumn fx:id="nameColumn" prefWidth="128.0" text="Name" />
+          <TableColumn fx:id="subjectColumn" prefWidth="95.0" text="Subject" />
+          <TableColumn fx:id="numberColumn" prefWidth="58.0" text="#" />
+            <TableColumn fx:id="electiveColumn" text="Elective?" />
         </columns>
       </TableView>
       <TextField fx:id="courseSearchBar" layoutX="55.0" layoutY="78.0" prefHeight="55.0" prefWidth="288.0" promptText="Search for Courses (by name or code)" />
+      <TextArea fx:id="courseInfoField" layoutX="77.0" layoutY="373.0" prefHeight="200.0" prefWidth="234.0" />
+      <Button fx:id="registerButton" layoutX="77.0" layoutY="580.0" text="Register" />
+
    </children>
 </AnchorPane>

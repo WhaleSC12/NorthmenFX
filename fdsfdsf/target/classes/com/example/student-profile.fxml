@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="880.0" fitWidth="488.0" layoutX="-9.0" layoutY="-49.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../target/classes/com/example/images/new-background.jpg" />
+            <Image url="@images/new-background.jpg" />
          </image>
       </ImageView>
       <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" />
@@ -95,8 +95,8 @@
             <Font name="Adelle Sans Devanagari Heavy" size="21.0" />
          </font>
       </Text>
-      <TextArea fx:id="bioField" layoutX="53.0" layoutY="340.0" prefHeight="200.0" prefWidth="297.0" />
+      <TextArea fx:id="bioField" layoutX="53.0" layoutY="340.0" prefHeight="200.0" prefWidth="297.0" editable="false" wrapText="true" />
       <Button fx:id="editProfileBtn" layoutX="114.0" layoutY="601.0" mnemonicParsing="false" text="Edit Profile" />
-      <Button fx:id="signOutBtn" layoutX="198.0" layoutY="601.0" mnemonicParsing="false" onAction="signOut" text="Sign Out" />
+      <Button fx:id="signOutBtn" layoutX="198.0" layoutY="601.0" mnemonicParsing="false" onAction="#signOut" text="Sign Out" />
    </children>
 </AnchorPane>

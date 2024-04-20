@@ -49,7 +49,7 @@
                   <Font name="Segoe UI Semibold" size="12.0" />
                </font>
             </Hyperlink>
-            <Button fx:id="signInButton" alignment="CENTER" layoutX="146.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #333333; -fx-background-radius: 25;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="signInButton" alignment="CENTER" layoutX="146.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #333333; -fx-background-radius: 25;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="14.0" />
                </font>
@@ -64,6 +64,7 @@
                   <Image url="@degreeEZ-logo.png" />
                </image>
             </ImageView>
+            <Text fx:id="signinErrorMessage" fill="#dd2323" layoutX="128.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login failed. Try again." visible="false" />
          </children>
       </AnchorPane>
    </children>

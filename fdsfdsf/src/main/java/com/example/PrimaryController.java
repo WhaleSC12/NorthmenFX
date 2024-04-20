@@ -29,40 +29,30 @@ public class PrimaryController {
     private Hyperlink signUpLink;
 
     @FXML
-    private Text loginMessage;
+    private Text signinErrorMessage;
 
     @FXML
     private void handleSignIn(ActionEvent event) {
         String username = usernameField.getText();
         String password = passwordField.getText();
         User user = DegreeWorksApplication.getInstance().login(username, password);
-        boolean isStudent;
-        StudentList studentList = StudentList.getInstance();
-        AdvisorList advisorList = AdvisorList.getInstance();
-        if (studentList.contains(user.getUUID())) {
-            isStudent = true;
-        } else if (advisorList.contains(user.getUUID())) {
-            isStudent = false;
+    
+        if (user != null) {
+            signinErrorMessage.setVisible(false);
+            if (StudentList.getInstance().contains(user.getUUID())) {
+                navigateTo("student-profile.fxml");
+            } else if (AdvisorList.getInstance().contains(user.getUUID())) {
+                navigateTo("advisor-home.fxml");
+            } else {
+                // In case the user is neither in student nor advisor lists
+                signinErrorMessage.setText("User role undetermined.");
+                signinErrorMessage.setVisible(true);
+            }
         } else {
-            System.out.println("Error validating user");
-            isStudent = false;
-        }
-        
-        
-        if (user != null && isStudent) {
-            loginMessage.setText("Login successful!");
-            navigateTo("student-home.fxml");
-        } else if (user != null && !isStudent) {
-            loginMessage.setText("Login successful!");
-            navigateTo("advisor-home.fxml");
-        }
-        
-        else {
-            loginMessage.setText("Login failed. Please check your username and password.");
-            loginMessage.setFill(Color.RED); 
-            loginMessage.setVisible(true);
+            signinErrorMessage.setVisible(true);
         }
     }
+    
 
     
     @FXML
@@ -78,7 +68,6 @@ public class PrimaryController {
             App.setRoot(fxmlFile);
         } catch (IOException e) {
             e.printStackTrace();
-            loginMessage.setText("Failed to load the view: " + fxmlFile);
         }
     }
 }

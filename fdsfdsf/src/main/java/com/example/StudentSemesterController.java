@@ -15,16 +15,6 @@ public class StudentSemesterController {
     private ComboBox<String> semesterDropdown;
 
     @FXML
-    private Text class1Name, class1Credits, class1Grade;
-    @FXML
-    private Text class2Name, class2Credits, class2Grade;
-    @FXML
-    private Text class3Name, class3Credits, class3Grade;
-    @FXML
-    private Text class4Name, class4Credits, class4Grade;
-    @FXML
-    private Text class5Name, class5Credits, class5Grade;
-    @FXML
     private VBox courseDetailsVBox;
 
     @FXML

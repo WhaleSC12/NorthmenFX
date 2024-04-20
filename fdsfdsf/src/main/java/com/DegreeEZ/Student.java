@@ -53,6 +53,28 @@ public class Student extends User {
         return this.major;
     }
 
+    public boolean isCurrentlyEnrolled(Course course) {
+        return enrolledCourses.contains(course);
+    }
+
+    public CompletedCourse findCompletedCourse(UUID courseID) {
+        for (CompletedCourse comp : completedCourses) {
+            if (comp.getCourse().getId().equals(courseID)) {
+                return comp;
+            }
+        }
+        return null;
+    }
+
+     public ArrayList<Course> getCompletedCoursesAsCourses() {
+        ArrayList<Course> courses = new ArrayList<>();
+        for (CompletedCourse comp : completedCourses) {
+            courses.add(comp.getCourse());
+        }
+        return courses;
+    }
+
+
     public ArrayList<Course> getEnrolledClasses() {
         return this.enrolledCourses;
     }
@@ -234,4 +256,6 @@ public class Student extends User {
     public void setAdvisorNote(Student student, String note) {
         student.addAdvisorNote(note);
     }
+
+    
 }

@@ -34,6 +34,16 @@ public class Major {
         return requiredCourseList;
     }
 
+    public String getMinGradeForCourse(UUID courseUUID) {
+        for (HashMap.Entry<Course, String> entry : requiredCourses.entrySet()) {
+            if (entry.getKey().getId().equals(courseUUID)) {
+                return entry.getValue();  // Return the minimum grade required for the course
+            }
+        }
+        return null;  // Return null if no specific grade requirement is found
+    }
+    
+
     public void setMajorID(UUID majorID) {
         this.majorID = majorID;
     }

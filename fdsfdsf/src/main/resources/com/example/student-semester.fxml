@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?> 
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.TemplateController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.StudentSemesterController">
    <children>
-      <ImageView fitHeight="822.0" fitWidth="495.0" layoutX="-45.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="880.0" fitWidth="488.0" layoutX="-9.0" layoutY="-49.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../Downloads/bg.jpeg" />
+            <Image url="@../../../../../target/classes/com/example/images/new-background.jpg" />
          </image>
       </ImageView>
       <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" />
@@ -42,13 +45,22 @@
             </ImageView>
          </children>
       </Pane>
-      <Text layoutX="173.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 1" />
-      <Text layoutX="173.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 2" />
-      <Text layoutX="173.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 3" />
-      <Text layoutX="173.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 4" />
-      <Text layoutX="173.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 5" />
-      <Text layoutX="173.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 6" />
-      <Text layoutX="173.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 7" />
-      <Text layoutX="173.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester 8" />
+      <Text fx:id="currentSemesterField" layoutX="123.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Semester: 3" wrappingWidth="201.96497344970703">
+         <font>
+            <Font name="Adelle Sans Devanagari Semibold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="nameField" layoutX="123.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: [First] [Last]" wrappingWidth="201.96497344970703">
+         <font>
+            <Font name="Adelle Sans Devanagari Semibold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="98.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8 Semester Plan">
+         <font>
+            <Font name="Adelle Sans Devanagari Heavy" size="25.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="semesterDropdown" layoutX="116.0" layoutY="117.0" prefWidth="150.0" promptText="Select Semester" />
+      <VBox fx:id="courseDetailsVBox" layoutX="50.0" layoutY="167.0" prefHeight="473.0" prefWidth="299.0" />
    </children>
 </AnchorPane>

@@ -66,9 +66,23 @@ public class StudentSearchController {
     }
 
     private String formatCourseDetails(Course course) {
-        return "Course " + course.getName() + "(" + course.getSubject() + " " + course.getNumber() + ")" +
-        "\n" + "Credits: " + course.getCreditHours() + "\n" + "Elective: " + course.getIsElective() +
-         "\n" + "Prerequisites: " + "\n" + course.printPrerequisites();
+        StringBuilder details = new StringBuilder();
+        details.append("Course: ").append(course.getName())
+               .append(" (").append(course.getSubject()).append(" ").append(course.getNumber()).append(")")
+               .append("\nCredits: ").append(course.getCreditHours())
+               .append("\nElective: ").append(course.getIsElective() ? "Yes" : "No");
+    
+        // Handling prerequisites
+        if (!course.getPrerequisites().isEmpty()) {
+            details.append("\nPrerequisites:");
+            for (Prerequisite prereq : course.getPrerequisites()) {
+                details.append("\n").append(prereq.printPrerequisites());  // Using the enhanced print method
+            }
+        } else {
+            details.append("\nPrerequisites: None");
+        }
+    
+        return details.toString();
     }
 
 

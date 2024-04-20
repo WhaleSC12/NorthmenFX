@@ -39,4 +39,14 @@ public class AdvisorList {
         }
         return false;
     }
+
+    public static Advisor getAdvisorByName(String name) {
+        for (Advisor advisor : getInstance().advisors) {
+            if (advisor.getName().equalsIgnoreCase(name.trim())) {
+                return advisor;
+            }
+        }
+        return null;
+    }
+    
 }

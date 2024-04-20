@@ -4,6 +4,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+
 
 import java.io.IOException;
 
@@ -20,10 +23,27 @@ public class StudentProfileController {
     @FXML private Button editProfileBtn;
     @FXML private Button signOutBtn;
 
+    @FXML
+    private ImageView homeButton;
+
+    @FXML
+    private ImageView searchButton;
+
+    @FXML
+    private ImageView semesterButton;
+
+    @FXML
+    private ImageView profileButton;
+
+
     private User currentUser;
 
     @FXML
     public void initialize() {
+        homeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-home.fxml"));
+        searchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-search.fxml"));
+        semesterButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-calendar.fxml"));
+        profileButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-profile.fxml"));
         currentUser = DegreeWorksApplication.getInstance().getUser();
         if (currentUser instanceof Student) {
             Student student = (Student) currentUser;

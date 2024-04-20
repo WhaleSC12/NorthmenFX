@@ -131,4 +131,8 @@ public class Advisor extends User {
     public List<Student> getStudents() {
         return students;
     }
+
+    public String getName() {
+        return getFirstName() + " " + getLastName();
+    }
 }

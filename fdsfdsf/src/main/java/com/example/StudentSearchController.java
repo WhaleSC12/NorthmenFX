@@ -28,7 +28,6 @@ public class StudentSearchController {
     @FXML
     public void initialize() {
         setupTableColumns();
-        setupButtons();
         loadAllCourses();
     }
 
@@ -72,10 +71,6 @@ public class StudentSearchController {
          "\n" + "Prerequisites: " + "\n" + course.printPrerequisites();
     }
 
-    private void setupButtons() {
-        searchButton.setOnMouseClicked(e -> performSearch());
-        registerButton.setOnAction(e -> registerSelectedCourse());
-    }
 
     private void performSearch() {
         String searchText = searchTextField.getText().trim().toLowerCase();
@@ -96,9 +91,14 @@ public class StudentSearchController {
     }
 
     private void registerSelectedCourse() {
-        if (selectedCourse != null) {
-            System.out.println("Registering for course: " + selectedCourse.getName());
-            // Implement your registration logic here
+        User currentUser = DegreeWorksApplication.getInstance().getUser();
+        if (currentUser instanceof Student && selectedCourse != null) {
+            Student student = (Student) currentUser;
+            student.addEnrolledCourse(selectedCourse);  // Assuming Student class has this method
+            System.out.println("Registered for course: " + selectedCourse.getName());
+        } else {
+            System.out.println("Registration failed: No course selected or user is not a student.");
         }
     }
+
 }

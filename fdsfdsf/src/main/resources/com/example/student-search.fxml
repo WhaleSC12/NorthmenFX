@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
@@ -34,7 +35,7 @@
                   <Image url="@../../../../../target/classes/com/example/images/calendar.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="searchButton" fitHeight="55.0" fitWidth="72.0" layoutX="115.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="searchButton" fitHeight="55.0" fitWidth="72.0" layoutX="115.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" onAction="#performSearch">
                <image>
                   <Image url="@../../../../../target/classes/com/example/images/search.png" />
                </image>
@@ -46,7 +47,7 @@
             </ImageView>
          </children>
       </Pane>
-      <TableView fx:id="searchResultsTable" layoutX="1.0" layoutY="169.0" prefHeight="183.0" prefWidth="390.0">
+      <TableView fx:id="searchResultsTable" layoutX="1.0" layoutY="169.0" prefHeight="242.0" prefWidth="390.0">
         <columns>
             <TableColumn fx:id="nameColumn" prefWidth="128.0" text="Name" />
           <TableColumn fx:id="subjectColumn" prefWidth="95.0" text="Subject" />
@@ -54,9 +55,10 @@
             <TableColumn fx:id="electiveColumn" text="Elective?" />
         </columns>
       </TableView>
-      <TextField fx:id="courseSearchBar" layoutX="55.0" layoutY="78.0" prefHeight="55.0" prefWidth="288.0" promptText="Search for Courses (by name or code)" />
-      <TextArea fx:id="courseInfoField" layoutX="77.0" layoutY="373.0" prefHeight="200.0" prefWidth="234.0" />
-      <Button fx:id="registerButton" layoutX="77.0" layoutY="580.0" text="Register" />
+      <TextField fx:id="searchTextField" layoutX="60.0" layoutY="61.0" prefHeight="55.0" prefWidth="288.0" promptText="Search for Courses (by name or code)" />
+      <TextArea fx:id="courseInfoField" layoutX="81.0" layoutY="415.0" prefHeight="200.0" prefWidth="234.0" />
+      <Button fx:id="registerButton" layoutX="117.0" layoutY="631.0" onAction="#registerSelectedCourse" prefHeight="33.0" prefWidth="151.0" text="Register" />
+      <Button fx:id="searchBtn" layoutX="166.0" layoutY="117.0" mnemonicParsing="false" onAction="#performSearch" text="Search" />
 
    </children>
 </AnchorPane>

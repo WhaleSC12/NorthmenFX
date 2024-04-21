@@ -18,7 +18,7 @@
          </image>
       </ImageView>
       <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" />
-      <Pane layoutY="745.0" prefHeight="100.0" prefWidth="397.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
+      <Pane layoutY="683.0" prefHeight="100.0" prefWidth="397.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
          <children>
             <Line endX="-100.0" endY="100.0" layoutX="191.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-100.0" endY="100.0" layoutX="295.0" startX="-100.0" stroke="WHITE" />
@@ -45,19 +45,9 @@
             </ImageView>
          </children>
       </Pane>
-      <Text fx:id="lastNameField" fill="WHITE" layoutX="70.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[First Name]" wrappingWidth="131.94100761413574">
+      <Text fx:id="nameField" fill="WHITE" layoutX="62.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name Last Nameio" textAlignment="CENTER" wrappingWidth="253.94100761413574">
          <font>
             <Font name="Adelle Sans Devanagari Extrabold" size="22.0" />
-         </font>
-      </Text>
-      <Text fx:id="firstNameField" fill="WHITE" layoutX="211.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[Last Name]" wrappingWidth="131.94100761413574">
-         <font>
-            <Font name="Adelle Sans Devanagari Extrabold" size="22.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="151.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Profile">
-         <font>
-            <Font name="Academy Engraved LET Plain:1.0" size="13.0" />
          </font>
       </Text>
       <Text fx:id="majorText" fill="WHITE" layoutX="39.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Major:">
@@ -95,7 +85,7 @@
             <Font name="Adelle Sans Devanagari Heavy" size="21.0" />
          </font>
       </Text>
-      <TextArea fx:id="bioField" layoutX="53.0" layoutY="340.0" prefHeight="200.0" prefWidth="297.0" editable="false" wrapText="true" />
+      <TextArea fx:id="bioField" editable="false" layoutX="53.0" layoutY="340.0" prefHeight="200.0" prefWidth="297.0" wrapText="true" />
       <Button fx:id="editProfileBtn" layoutX="114.0" layoutY="601.0" mnemonicParsing="false" text="Edit Profile" />
       <Button fx:id="signOutBtn" layoutX="198.0" layoutY="601.0" mnemonicParsing="false" onAction="#signOut" text="Sign Out" />
    </children>

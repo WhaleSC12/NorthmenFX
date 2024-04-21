@@ -14,8 +14,7 @@ import com.DegreeEZ.*;
 
 public class StudentProfileController {
 
-    @FXML private Text firstNameField;
-    @FXML private Text lastNameField;
+    @FXML private Text nameField;
     @FXML private Text majorField;
     @FXML private Text yearField;
     @FXML private Text gpaField;
@@ -55,8 +54,7 @@ public class StudentProfileController {
     }
 
     private void updateProfile(Student student) {
-        firstNameField.setText(student.getFirstName());
-        lastNameField.setText(student.getLastName());
+        nameField.setText(student.toString());
         majorField.setText(student.getMajor().getMajorName());  
         yearField.setText(student.getStudentYear());     
         gpaField.setText(String.format("%.2f", student.calculateGPA()));

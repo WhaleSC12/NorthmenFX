@@ -41,6 +41,3 @@ public class AdvisorHomeController {
     private CheckBox checkBox3;
 
 }
-
-
-

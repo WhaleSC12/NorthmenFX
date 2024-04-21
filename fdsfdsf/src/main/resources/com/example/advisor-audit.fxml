@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="840.0" fitWidth="390.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../scenebuilderbackground.png" />
+            <Image url="@images/new-background.jpg" />
          </image>
       </ImageView>
    </children>

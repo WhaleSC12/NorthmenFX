@@ -21,7 +21,7 @@ import com.DegreeEZ.StudentList;
 import java.util.ArrayList;
 import java.util.UUID;
 
-public class SignUpController {
+public class OldSignUpController {
 
     @FXML
     private TextField firstNameField;
@@ -54,7 +54,6 @@ public class SignUpController {
     public void initialize() {
         populateCoursesDropdown();
         populateGradeDropdown();
-        populateSemesterDropdown();
         populateYearDropdown();
         populateMajorDropdown();
         toggleAdvisorFields(false); // Initially set to student mode
@@ -69,9 +68,6 @@ public class SignUpController {
         gradeDropdown.getItems().addAll("A", "B", "C", "D", "F");
     }
 
-    private void populateSemesterDropdown() {
-        semesterDropdown.getItems().addAll(1, 2, 3, 4, 5, 6, 7, 8);
-    }
 
     private void populateYearDropdown() {
         yearDropdown.getItems().addAll("Freshman", "Sophomore", "Junior", "Senior");

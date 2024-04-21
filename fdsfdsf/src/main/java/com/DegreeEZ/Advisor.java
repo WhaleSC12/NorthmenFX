@@ -22,6 +22,18 @@ public class Advisor extends User {
         }
     }
 
+    // Adds a student by UUID to the advisor's list of students
+    public void addStudentUUID(UUID studentUUID) {
+        Student student = StudentList.getStudentByUUID(studentUUID);
+        if (student != null) {
+            students.add(student);
+            System.out.println("Student added: " + student.getFirstName() + " " + student.getLastName());
+        } else {
+            System.err.println("No student found with UUID: " + studentUUID);
+        }
+    }
+
+
     public void performDegreeAudit(Student student, Scanner scanner) {
         System.out.println("Degree Audit For Student " + student);
         System.out.println("Major: " + student.getMajor());
@@ -131,6 +143,7 @@ public class Advisor extends User {
     public List<Student> getStudents() {
         return students;
     }
+
 
     public String getName() {
         return getFirstName() + " " + getLastName();

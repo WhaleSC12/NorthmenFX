@@ -39,6 +39,16 @@
                   <Image url="@../../../../../../../NorthmenFXIntellij/NorthmenFX/fdsfdsf/src/main/resources/com/example/images/status-bar.png" />
                </image>
             </ImageView>
+            <Text fill="WHITE" layoutX="109.0" layoutY="816.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Hyperlink id="sign-up-link" fx:id="signUpLink" layoutX="234.0" layoutY="800.0" onAction="#handleSignUp" text="Sign up!" textFill="#00a1ff">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+            </Hyperlink>
             <Button fx:id="signInButton" alignment="CENTER" layoutX="146.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #333333; -fx-background-radius: 25;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="14.0" />

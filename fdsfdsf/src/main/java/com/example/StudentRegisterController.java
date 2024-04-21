@@ -7,6 +7,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -27,11 +28,11 @@ public class StudentRegisterController {
     @FXML
     private TextField passwordField;
     @FXML
-    private ComboBox<String> majorDropdown;  // Assuming the ComboBox contains Strings
+    private ComboBox<String> majorDropdown; 
     @FXML
-    private ComboBox<String> yearDropdown;   // Assuming the ComboBox contains Strings
+    private ComboBox<String> yearDropdown;  
     @FXML
-    private ComboBox<String> advisorDropdown; // Assuming the ComboBox contains Strings
+    private ComboBox<String> advisorDropdown; 
     @FXML
     private TextArea bioField;
     @FXML
@@ -41,29 +42,17 @@ public class StudentRegisterController {
 
     @FXML
     private void initialize() {
-        // Initial setup can be done here, such as filling ComboBoxes
         populateMajorDropdown();
         populateAdvisorDropdown();
-        populateComboBoxes();
         setupListeners();
-    }
-
-    private void populateComboBoxes() {
-        // Populate the ComboBoxes with example data
-        majorDropdown.getItems().addAll("Computer Science", "Business Administration", "Psychology");
-        yearDropdown.getItems().addAll("Freshman", "Sophomore", "Junior", "Senior");
-        advisorDropdown.getItems().addAll("Advisor A", "Advisor B", "Advisor C");
     }
 
     private void setupListeners() {
         registerButton.setOnAction(event -> registerStudent());
-        addStudentsBtn.setOnAction(event -> addStudent());
     }
     
     private void populateMajorDropdown() {
-        // Clear existing items to avoid duplication if this method is called more than once.
         majorDropdown.getItems().clear();
-        // Add each major individually to the dropdown.
         for (Major major : MajorList.getMajors()) {
             majorDropdown.getItems().add(major.getMajorName());
         }
@@ -72,14 +61,13 @@ public class StudentRegisterController {
     private void populateAdvisorDropdown() {
         advisorDropdown.getItems().clear();  // Clear existing items first to avoid duplicates
         for (Advisor advisor : AdvisorList.getAdvisors()) {
-            advisorDropdown.getItems().add(advisor.getName());  // Assuming getFullName() returns the advisor's name
+            advisorDropdown.getItems().add(advisor.getName());  
         }
     }
 
 
 
     private void registerStudent() {
-        // Implement the logic to register a student
         if (firstNameField.getText().isEmpty() || lastNameField.getText().isEmpty() ||
             usernameField.getText().isEmpty() || passwordField.getText().isEmpty() ||
             majorDropdown.getSelectionModel().isEmpty() || yearDropdown.getSelectionModel().isEmpty() ||
@@ -88,8 +76,7 @@ public class StudentRegisterController {
             errorMessage.setText("Error: Please fill all required fields.");
         } else {
             errorMessage.setVisible(false);
-            // Proceed with student registration logic
-            System.out.println("Student Registered!");
+            createStudentAccount();
         }
     }
 
@@ -139,16 +126,19 @@ public class StudentRegisterController {
             errorMessage.setText("Account creation failed. Please check the data provided.");
             errorMessage.setVisible(true);
         } else {
-            errorMessage.setText("Student account created successfully!");
-            errorMessage.setVisible(true);
+            navigateTo("student-home.fxml");
+            
         }
     }
     
 
     
 
-    private void addStudent() {
-        // Logic to add students (additional functionality if needed)
-        System.out.println("Student Added!");
+    private void navigateTo(String fxmlFile) {
+        try {
+            App.setRoot(fxmlFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.err.println("Error navigating to: " + fxmlFile);        }
     }
 }

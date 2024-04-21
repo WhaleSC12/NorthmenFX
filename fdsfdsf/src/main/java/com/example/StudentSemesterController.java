@@ -1,62 +1,28 @@
 package com.example;
 
-import java.util.ArrayList;
-
-import com.DegreeEZ.*;
-
 import javafx.fxml.FXML;
 import javafx.scene.layout.VBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.text.Text;
+import com.DegreeEZ.*;
 
 public class StudentSemesterController {
 
     @FXML
     private ComboBox<String> semesterDropdown;
-
     @FXML
     private VBox courseDetailsVBox;
-
     @FXML
     private Text currentSemesterField;
 
-    public void initialize() {
-        populateSemesterDropdown();
-        setDefaultValues();
-    }
+    private Student currentStudent;
 
-    private void updateSemesterDetails(String selectedSemester) {
-        Student currentStudent = (Student) DegreeWorksApplication.getInstance().getUser();
-        Major studentMajor = currentStudent.getMajor();
-        int semesterIndex = Integer.parseInt(selectedSemester.substring(9)); 
-        
-        // Clear existing information
-        courseDetailsVBox.getChildren().clear();
-    
-        // Get all relevant courses
-        ArrayList<Course> allCourses = new ArrayList<>(currentStudent.getOutstandingRequirements());
-        allCourses.addAll(currentStudent.getEnrolledCourses()); 
-        allCourses.addAll(currentStudent.getCompletedCoursesAsCourses()); 
-    
-        int courseCount = 1;
-        for (Course course : allCourses) {
-            String displayText = courseCount++ + ". " + course.getName() + " (" + course.getNumber() + ")\nCredits: " + course.getCreditHours();
-            String gradeText = "";
-    
-            // Determine if the course is completed, enrolled, or planned
-            CompletedCourse completed = currentStudent.findCompletedCourse(course.getId());
-            if (completed != null) {
-                gradeText = "Grade Received: " + completed.getGrade();
-            } else if (currentStudent.isCurrentlyEnrolled(course)) {
-                gradeText = "Enrolled";
-            } else {
-                String minGrade = studentMajor.getMinGradeForCourse(course.getId());
-                gradeText = "Grade Required: " + (minGrade != null ? minGrade : "N/A");
-            }
-    
-            displayText += "\n" + gradeText + "\n";
-            courseDetailsVBox.getChildren().add(new Text(displayText));
-        }
+    public void initialize() {
+        currentStudent = (Student) DegreeWorksApplication.getInstance().getUser(); // Get the logged-in student
+        populateSemesterDropdown();
+        currentSemesterField.setText("Current Semester: " + (currentStudent.getSemestersCompleted() + 1));
+        semesterDropdown.getSelectionModel().select(currentStudent.getSemestersCompleted());
+        updateSemesterDetails(semesterDropdown.getValue());
     }
 
     private void populateSemesterDropdown() {
@@ -66,9 +32,32 @@ public class StudentSemesterController {
         semesterDropdown.setOnAction(event -> updateSemesterDetails(semesterDropdown.getValue()));
     }
 
+    private void updateSemesterDetails(String selectedSemester) {
+        int semesterIndex = Integer.parseInt(selectedSemester.split(" ")[1]);
+        courseDetailsVBox.getChildren().clear(); // Clear previous items
 
-    private void setDefaultValues() {
-        semesterDropdown.getSelectionModel().selectFirst();
-        updateSemesterDetails(semesterDropdown.getValue());
+        if (semesterIndex <= currentStudent.getSemestersCompleted()) {
+            // Handle past semesters
+            for (CompletedCourse completedCourse : currentStudent.getCompletedCourses()) {
+                if (completedCourse.getSemesterTaken() == semesterIndex) {
+                    Text courseText = new Text(completedCourse.getCourse().getName() + " - Credits: " + completedCourse.getCourse().getCreditHours() + ", Grade: " + completedCourse.getGrade());
+                    courseDetailsVBox.getChildren().add(courseText);
+                }
+            }
+        } else if (semesterIndex == currentStudent.getSemestersCompleted() + 1) {
+            // Handle current semester
+            for (Course course : currentStudent.getEnrolledCourses()) {
+                Text courseText = new Text(course.getName() + " - Credits: " + course.getCreditHours());
+                courseDetailsVBox.getChildren().add(courseText);
+            }
+        } else {
+            // Handle future semesters
+            for (Course course : currentStudent.getOutstandingRequirements()) {
+                if (course.getReccomendedSemester() == semesterIndex) {
+                    Text courseText = new Text(course.getName() + " - Credits: " + course.getCreditHours());
+                    courseDetailsVBox.getChildren().add(courseText);
+                }
+            }
+        }
     }
 }

@@ -30,9 +30,6 @@ public class App extends Application {
         FXMLLoader loader = new FXMLLoader(App.class.getResource(fxml));
         return loader.load();
     }
-    
-    
-    
 
     public static void main(String[] args) {
         launch();

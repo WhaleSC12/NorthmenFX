@@ -76,6 +76,7 @@ public class AdvisorSearchController {
                 currentStudent = searchResults.get(index);
                 messageText.setText("Send Message to: " + currentStudent.getFirstName() + " " + currentStudent.getLastName());
                 messageField.setVisible(true);
+                messageConfirmationText.setVisible(false);
                 messageText.setVisible(true);
                 sendMessageButton.setVisible(true);
                 indexErrorMessage.setVisible(false);

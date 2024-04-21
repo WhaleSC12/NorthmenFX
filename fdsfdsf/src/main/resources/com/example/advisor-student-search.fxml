@@ -64,5 +64,5 @@
    <TextArea fx:id="messageField" layoutX="49.0" layoutY="584.0" prefHeight="76.0" prefWidth="292.0" visible="false" />
    <Text fx:id="messageText" fill="WHITE" layoutX="110.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Message to: Jaxon Hayes" visible="false" />
    <Button fx:id="sendMessageButton" layoutX="172.0" layoutY="668.0" mnemonicParsing="false" onAction="#sendMessageToStudent" text="Send" visible="false" />
-   <Text fx:id="messageConfirmationText" fill="WHITE" layoutX="98.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message sent to: " wrappingWidth="263.9609375" />
+   <Text fx:id="messageConfirmationText" fill="WHITE" layoutX="98.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message sent to: " visible="false" wrappingWidth="263.9609375" />
 </AnchorPane>

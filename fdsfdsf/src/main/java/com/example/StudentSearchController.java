@@ -67,8 +67,7 @@ public class StudentSearchController {
                 if (currentUser instanceof Student) {
                     Student student = (Student) currentUser;
                     student.addEnrolledCourse(selectedCourse);  
-                    System.out.println("Registered for course: " + selectedCourse.getName());
-                    message.setText("Registration Successful");
+                    message.setText("Registered for course: " + selectedCourse.getName());
                 } else {
                     System.out.println("Registration failed: User is not a student.");
                 }

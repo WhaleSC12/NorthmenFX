@@ -34,5 +34,52 @@
         ],
         "electiveCreditsRequired": "6",
         "electiveOptions": ["dbbe9692-d811-4230-90bb-d0197a2ca669","dbbe9692-d811-4230-90bb-d0197a2ca668","dbbe9692-d811-4230-90bb-d0197a2ca67"]
+    },
+    {
+        "major_uuid": "f2b85ee6-3c7d-4f2f-920b-76f8d233073b",
+        "major_name": "Biology",
+        "requiredClasses": [
+            {"course_uuid": "b61ec6a8-6f9c-4f8e-9753-8d1e00cd1b93", "course_minGrade": "C"},
+            {"course_uuid": "123bc9d6-4d64-4866-986f-a6a6f456f99a", "course_minGrade": "C"},
+            {"course_uuid": "dbbe9692-d811-4230-90bb-d0197a2ca651", "course_minGrade": "C"},
+            {"course_uuid": "89fd6a51-c6f3-485d-9f85-7f81a29aee77", "course_minGrade": "C"},
+            {"course_uuid": "56e2feec-18a0-43c6-8a5e-1f9f6740066e", "course_minGrade": "C"},
+            {"course_uuid": "b7bd5243-3f1d-4d53-a3be-45f6648d6021", "course_minGrade": "C"},
+            {"course_uuid": "28f76e6e-5713-4160-9b26-0410c8c25dab", "course_minGrade": "C"},
+            {"course_uuid": "c95f9fd6-4f23-41f8-9b0b-0d3d5f8fd555", "course_minGrade": "C"},
+            {"course_uuid": "8df6ed06-b208-45c0-8a4e-ffcce20f0f0a", "course_minGrade": "C"},
+            {"course_uuid": "2b917c87-e1c8-4b68-8356-cb5595c865c5", "course_minGrade": "C"},
+            {"course_uuid": "3a486c68-a47c-4917-8faa-d9f19b9d247e", "course_minGrade": "C"},
+            {"course_uuid": "b7d9ef77-6d04-4687-8b3f-8652f8c011b8", "course_minGrade": "C"},
+            {"course_uuid": "71cc6e58-81d4-41c8-b92b-9fd78c38556c", "course_minGrade": "C"},
+            {"course_uuid": "9cde5667-8b32-4f42-8205-a8a8379e8e5b", "course_minGrade": "C"},
+            {"course_uuid": "e44a4e52-dc5b-4b02-9e22-5fd24bff5a91", "course_minGrade": "C"},
+            {"course_uuid": "31b2a4bc-5cd8-4f06-9eaf-b2d5c805bbee", "course_minGrade": "C"},
+            {"course_uuid": "0c9a4e97-6f5f-4b8b-a9ee-86f8785428b4", "course_minGrade": "C"},
+            {"course_uuid": "85d1fa3f-cc3e-42ad-93bc-fbebccebcd7f", "course_minGrade": "C"},
+            {"course_uuid": "3c392d58-3175-419c-8c98-6e15f77b71ab", "course_minGrade": "C"},
+            {"course_uuid": "7cbef1a9-7c60-49a3-ae6c-56e273306b53", "course_minGrade": "C"},
+            {"course_uuid": "2cfa1a1c-497e-4d26-9c8f-e34a2e3ec9e9", "course_minGrade": "C"},
+            {"course_uuid": "f6f78c2d-ec19-463e-bb70-2d8e3bdec8d5", "course_minGrade": "C"},
+            {"course_uuid": "d3179c1c-1a4d-43cb-a6b6-ec1c7988dd4c", "course_minGrade": "C"},
+            {"course_uuid": "5b686d7c-5c16-4a5c-b291-59c41e8a4bfa", "course_minGrade": "C"},
+            {"course_uuid": "22ff4f1e-0245-4b1b-82a1-5ec5ac605c91", "course_minGrade": "C"},
+            {"course_uuid": "6f3ef77c-05fd-47f2-98e8-ed78c8560fe8", "course_minGrade": "C"},
+            {"course_uuid": "17be5e57-8dae-4d2c-9fd2-5f5871cbafcb", "course_minGrade": "C"},
+            {"course_uuid": "cc1a3172-accb-48e4-adff-01f2e4f06cfb", "course_minGrade": "C"},
+            {"course_uuid": "3485d3dd-c59c-4e4b-a5d4-ff5db113d258", "course_minGrade": "C"},
+            {"course_uuid": "7e5484c2-2d00-45b8-ae25-ac1f6b6435d2", "course_minGrade": "C"},
+            {"course_uuid": "560f94fe-0a5d-4d1e-9547-f58f5c4366fa", "course_minGrade": "C"},
+            {"course_uuid": "1d1aa9ce-aee3-478b-8a8d-fe330b8b3106", "course_minGrade": "C"},
+            {"course_uuid": "8b12677d-3baa-416f-b476-f68014458cce", "course_minGrade": "C"},
+            {"course_uuid": "5ae287d5-6ec1-4ebe-9db2-5fa2b1da6344", "course_minGrade": "C"},
+            {"course_uuid": "9e6d6dea-3ae8-42d7-9fcb-346c441b9cfa", "course_minGrade": "C"}
+        ],
+        "electiveCreditsRequired": "9",
+        "electiveOptions": [
+            "2cfa1a1c-497e-4d26-9c8f-e34a2e3ec9e9",
+            "f6f78c2d-ec19-463e-bb70-2d8e3bdec8d5",
+            "5ae287d5-6ec1-4ebe-9db2-5fa2b1da6344"
+        ]
     }
 ]

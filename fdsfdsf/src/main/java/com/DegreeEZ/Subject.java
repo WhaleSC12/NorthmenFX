@@ -21,5 +21,7 @@ public enum Subject {
     BIOL,
     CLIM,
     CS,
-    CHEM
+    CHEM,
+    PHYS,
+    ENV
 }

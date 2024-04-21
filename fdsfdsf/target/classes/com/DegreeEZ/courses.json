@@ -380,5 +380,462 @@
         "availability": ["SPRING"],
         "recommended_semester": 6,
         "isElective": false
+    },
+        {
+            "course_uuid": "b61ec6a8-6f9c-4f8e-9753-8d1e00cd1b93",
+            "course_name": "Introduction to Biology",
+            "course_subject": "BIOL",
+            "course_number": "101",
+            "course_prereq": [],
+            "creditHours": 4,
+            "availability": ["FALL", "SPRING"],
+            "recommended_semester": 1,
+            "isElective": false
+        },
+        {
+            "course_uuid": "123bc9d6-4d64-4866-986f-a6a6f456f99a",
+            "course_name": "Biology Lab I",
+            "course_subject": "BIOL",
+            "course_number": "101L",
+            "course_prereq": [
+                {
+                    "prereq_uuid": "b61ec6a8-6f9c-4f8e-9753-8d1e00cd1b93",
+                    "minGrade": "C"
+                }
+            ],
+            "creditHours": 1,
+            "availability": ["FALL", "SPRING"],
+            "recommended_semester": 1,
+            "isElective": false
+        },
+       
+        {
+            "course_uuid": "89fd6a51-c6f3-485d-9f85-7f81a29aee77",
+            "course_name": "Chemistry Lab I",
+            "course_subject": "CHEM",
+            "course_number": "101L",
+            "course_prereq": [
+                {
+                    "prereq_uuid": "34b895fd-8c50-4d85-a6a7-e7a2a5b067bc",
+                    "minGrade": "C"
+                }
+            ],
+            "creditHours": 1,
+            "availability": ["FALL", "SPRING"],
+            "recommended_semester": 1,
+            "isElective": false
+        },
+        {
+            "course_uuid": "56e2feec-18a0-43c6-8a5e-1f9f6740066e",
+            "course_name": "Calculus I",
+            "course_subject": "MATH",
+            "course_number": "141",
+            "course_prereq": [],
+            "creditHours": 4,
+            "availability": ["FALL", "SPRING"],
+            "recommended_semester": 1,
+            "isElective": false
+        },
+        {
+            "course_uuid": "b7bd5243-3f1d-4d53-a3be-45f6648d6021",
+            "course_name": "First Year Seminar in Biology",
+            "course_subject": "BIOL",
+            "course_number": "199",
+            "course_prereq": [],
+            "creditHours": 2,
+            "availability": ["FALL", "SPRING"],
+            "recommended_semester": 1,
+            "isElective": true
+        },
+        {
+            "course_uuid": "28f76e6e-5713-4160-9b26-0410c8c25dab",
+            "course_name": "General Biology II",
+            "course_subject": "BIOL",
+            "course_number": "102",
+            "course_prereq": [
+                {
+                    "prereq_uuid": "b61ec6a8-6f9c-4f8e-9753-8d1e00cd1b93",
+                    "minGrade": "C"
+                }
+            ],
+            "creditHours": 4,
+            "availability": ["FALL", "SPRING"],
+            "recommended_semester": 2,
+            "isElective": false
+        },
+        {
+            "course_uuid": "c95f9fd6-4f23-41f8-9b0b-0d3d5f8fd555",
+            "course_name": "Biology Lab II",
+            "course_subject": "BIOL",
+            "course_number": "102L",
+            "course_prereq": [
+                {
+                    "prereq_uuid": "28f76e6e-5713-4160-9b26-0410c8c25dab",
+                    "minGrade": "C"
+                }
+            ],
+            "creditHours": 1,
+            "availability": ["FALL", "SPRING"],
+            "recommended_semester": 2,
+            "isElective": false
+        },
+        {
+            "course_uuid": "a1d1c9e3-763d-49ba-b4f3-43b267eb5dfc",
+            "course_name": "Organic Chemistry I",
+            "course_subject": "CHEM",
+            "course_number": "261",
+            "course_prereq": [
+                {
+                    "prereq_uuid": "34b895fd-8c50-4d85-a6a7-e7a2a5b067bc",
+                    "minGrade": "C"
+                }
+            ],
+            "creditHours": 3,
+            "availability": ["FALL", "SPRING"],
+            "recommended_semester": 2,
+            "isElective": false
+        },
+        {
+            "course_uuid": "f77b4b10-3178-47b5-aa8c-ae5d82c33491",
+            "course_name": "Organic Chemistry Lab I",
+            "course_subject": "CHEM",
+            "course_number": "261L",
+            "course_prereq": [
+                {
+                    "prereq_uuid": "a1d1c9e3-763d-49ba-b4f3-43b267eb5dfc",
+                    "minGrade": "C"
+                }
+            ],
+            "creditHours": 1,
+            "availability": ["FALL", "SPRING"],
+            "recommended_semester": 2,
+            "isElective": false
+        },
+        {
+            "course_uuid": "dd9475b0-01bf-4ebc-9c1d-edb8b713b5b3",
+            "course_name": "Statistics for Life Sciences",
+            "course_subject": "STAT",
+            "course_number": "205",
+            "course_prereq": [],
+            "creditHours": 3,
+            "availability": ["FALL", "SPRING"],
+            "recommended_semester": 2,
+            "isElective": false
+        },
+        {
+            "course_uuid": "0a9d292a-011d-4d7e-81c5-2d06c6535c68",
+            "course_name": "Introductory Physics I",
+            "course_subject": "PHYS",
+            "course_number": "211",
+            "course_prereq": [],
+            "creditHours": 3,
+            "availability": ["FALL", "SPRING"],
+            "recommended_semester": 2,
+            "isElective": false
+        },
+    
+    {
+        "course_uuid": "8df6ed06-b208-45c0-8a4e-ffcce20f0f0a",
+        "course_name": "Genetics",
+        "course_subject": "BIOL",
+        "course_number": "201",
+        "course_prereq": [
+            {
+                "prereq_uuid": "28f76e6e-5713-4160-9b26-0410c8c25dab",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 4,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 3,
+        "isElective": false
+    },
+    {
+        "course_uuid": "2b917c87-e1c8-4b68-8356-cb5595c865c5",
+        "course_name": "Genetics Lab",
+        "course_subject": "BIOL",
+        "course_number": "201L",
+        "course_prereq": [
+            {
+                "prereq_uuid": "8df6ed06-b208-45c0-8a4e-ffcce20f0f0a",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 1,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 3,
+        "isElective": false
+    },
+    {
+        "course_uuid": "3a486c68-a47c-4917-8faa-d9f19b9d247e",
+        "course_name": "Cell Biology",
+        "course_subject": "BIOL",
+        "course_number": "301",
+        "course_prereq": [
+            {
+                "prereq_uuid": "8df6ed06-b208-45c0-8a4e-ffcce20f0f0a",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 4,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 3,
+        "isElective": false
+    },
+    {
+        "course_uuid": "b7d9ef77-6d04-4687-8b3f-8652f8c011b8",
+        "course_name": "Cell Biology Lab",
+        "course_subject": "BIOL",
+        "course_number": "301L",
+        "course_prereq": [
+            {
+                "prereq_uuid": "3a486c68-a47c-4917-8faa-d9f19b9d247e",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 1,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 3,
+        "isElective": false
+    },
+    {
+        "course_uuid": "71cc6e58-81d4-41c8-b92b-9fd78c38556c",
+        "course_name": "Molecular Biology",
+        "course_subject": "BIOL",
+        "course_number": "302",
+        "course_prereq": [
+            {
+                "prereq_uuid": "3a486c68-a47c-4917-8faa-d9f19b9d247e",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 4,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 4,
+        "isElective": false
+    },
+    {
+        "course_uuid": "9cde5667-8b32-4f42-8205-a8a8379e8e5b",
+        "course_name": "Molecular Biology Lab",
+        "course_subject": "BIOL",
+        "course_number": "302L",
+        "course_prereq": [
+            {
+                "prereq_uuid": "71cc6e58-81d4-41c8-b92b-9fd78c38556c",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 1,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 4,
+        "isElective": false
+    },
+    {
+        "course_uuid": "e44a4e52-dc5b-4b02-9e22-5fd24bff5a91",
+        "course_name": "Biochemistry",
+        "course_subject": "CHEM",
+        "course_number": "350",
+        "course_prereq": [
+            {
+                "prereq_uuid": "a1d1c9e3-763d-49ba-b4f3-43b267eb5dfc",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 4,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 4,
+        "isElective": false
+    },
+    {
+        "course_uuid": "31b2a4bc-5cd8-4f06-9eaf-b2d5c805bbee",
+        "course_name": "Biochemistry Lab",
+        "course_subject": "CHEM",
+        "course_number": "350L",
+        "course_prereq": [
+            {
+                "prereq_uuid": "e44a4e52-dc5b-4b02-9e22-5fd24bff5a91",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 1,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 4,
+        "isElective": false
+    },
+    {
+        "course_uuid": "0c9a4e97-6f5f-4b8b-a9ee-86f8785428b4",
+        "course_name": "Ecology",
+        "course_subject": "BIOL",
+        "course_number": "370",
+        "course_prereq": [
+            {
+                "prereq_uuid": "3a486c68-a47c-4917-8faa-d9f19b9d247e",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 3,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 4,
+        "isElective": false
+    },
+    {
+        "course_uuid": "85d1fa3f-cc3e-42ad-93bc-fbebccebcd7f",
+        "course_name": "Ecology Lab",
+        "course_subject": "BIOL",
+        "course_number": "370L",
+        "course_prereq": [
+            {
+                "prereq_uuid": "0c9a4e97-6f5f-4b8b-a9ee-86f8785428b4",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 1,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 4,
+        "isElective": false
+    },
+    {
+        "course_uuid": "3c392d58-3175-419c-8c98-6e15f77b71ab",
+        "course_name": "Evolutionary Biology",
+        "course_subject": "BIOL",
+        "course_number": "400",
+        "course_prereq": [
+            {
+                "prereq_uuid": "0c9a4e97-6f5f-4b8b-a9ee-86f8785428b4",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 3,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 5,
+        "isElective": false
+    },
+    {
+        "course_uuid": "7cbef1a9-7c60-49a3-ae6c-56e273306b53",
+        "course_name": "Evolutionary Biology Lab",
+        "course_subject": "BIOL",
+        "course_number": "400L",
+        "course_prereq": [
+            {
+                "prereq_uuid": "3c392d58-3175-419c-8c98-6e15f77b71ab",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 1,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 5,
+        "isElective": false
+    },
+    {
+        "course_uuid": "2cfa1a1c-497e-4d26-9c8f-e34a2e3ec9e9",
+        "course_name": "Advanced Topics in Biology",
+        "course_subject": "BIOL",
+        "course_number": "450",
+        "course_prereq": [
+            {
+                "prereq_uuid": "3c392d58-3175-419c-8c98-6e15f77b71ab",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 3,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 5,
+        "isElective": true
+    },
+    {
+        "course_uuid": "f6f78c2d-ec19-463e-bb70-2d8e3bdec8d5",
+        "course_name": "Neurobiology",
+        "course_subject": "BIOL",
+        "course_number": "460",
+        "course_prereq": [
+            {
+                "prereq_uuid": "71cc6e58-81d4-41c8-b92b-9fd78c38556c",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 3,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 5,
+        "isElective": false
+    },
+    {
+        "course_uuid": "d3179c1c-1a4d-43cb-a6b6-ec1c7988dd4c",
+        "course_name": "Neurobiology Lab",
+        "course_subject": "BIOL",
+        "course_number": "460L",
+        "course_prereq": [
+            {
+                "prereq_uuid": "f6f78c2d-ec19-463e-bb70-2d8e3bdec8d5",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 1,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 5,
+        "isElective": false
+    },
+    {
+        "course_uuid": "5b686d7c-5c16-4a5c-b291-59c41e8a4bfa",
+        "course_name": "Microbiology",
+        "course_subject": "BIOL",
+        "course_number": "480",
+        "course_prereq": [
+            {
+                "prereq_uuid": "71cc6e58-81d4-41c8-b92b-9fd78c38556c",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 3,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 6,
+        "isElective": false
+    },
+    {
+        "course_uuid": "22ff4f1e-0245-4b1b-82a1-5ec5ac605c91",
+        "course_name": "Microbiology Lab",
+        "course_subject": "BIOL",
+        "course_number": "480L",
+        "course_prereq": [
+            {
+                "prereq_uuid": "5b686d7c-5c16-4a5c-b291-59c41e8a4bfa",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 1,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 6,
+        "isElective": false
+    },
+    {
+        "course_uuid": "6f3ef77c-05fd-47f2-98e8-ed78c8560fe8",
+        "course_name": "Immunology",
+        "course_subject": "BIOL",
+        "course_number": "490",
+        "course_prereq": [
+            {
+                "prereq_uuid": "5b686d7c-5c16-4a5c-b291-59c41e8a4bfa",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 3,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 6,
+        "isElective": false
+    },
+    {
+        "course_uuid": "17be5e57-8dae-4d2c-9fd2-5f5871cbafcb",
+        "course_name": "Immunology Lab",
+        "course_subject": "BIOL",
+        "course_number": "490L",
+        "course_prereq": [
+            {
+                "prereq_uuid": "6f3ef77c-05fd-47f2-98e8-ed78c8560fe8",
+                "minGrade": "C"
+            }
+        ],
+        "creditHours": 1,
+        "availability": ["FALL", "SPRING"],
+        "recommended_semester": 6,
+        "isElective": false
     }
 ]

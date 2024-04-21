@@ -43,6 +43,11 @@ public class DegreeWorksApplication {
         return instance;
     }
 
+    public void setUser(User user) {
+        this.user = user; 
+    }
+    
+
     public User createAccount(boolean isAdvisor, String firstName, String lastName, String username, String password, Major major, ArrayList<CompletedCourse> completedCourses, ArrayList<Course> enrolledCourses, ArrayList<Course> outstandingRequirements, UUID advisorUUID, ArrayList<String> advisorNotes, int semestersCompleted, String bio, ArrayList<UUID> studentUUIDs) {
         ArrayList<Student> allStudents = StudentList.getStudents();
         ArrayList<Advisor> allAdvisors = AdvisorList.getAdvisors();

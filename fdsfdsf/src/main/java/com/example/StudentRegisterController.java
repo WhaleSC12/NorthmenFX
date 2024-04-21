@@ -121,6 +121,7 @@ public class StudentRegisterController {
             errorMessage.setText("Account creation failed. Please check the data provided.");
             errorMessage.setVisible(true);
         } else {
+            DegreeWorksApplication.getInstance().setUser(newUser);
             navigateTo("student-home.fxml");
             
         }

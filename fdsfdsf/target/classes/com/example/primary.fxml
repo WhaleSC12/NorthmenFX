@@ -14,9 +14,9 @@
    <children>
       <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0">
          <children>
-            <ImageView fitHeight="840.0" fitWidth="390.0" style="-fx-opacity: .7;">
+            <ImageView fitHeight="840.0" fitWidth="390.0" style="-fx-opacity: .9;">
                <image>
-                  <Image url="@../../../../../../../NorthmenFXIntellij/NorthmenFX/fdsfdsf/src/main/resources/com/example/images/background.jpg" />
+                  <Image url="@images/new-background.jpg" />
                </image>
             </ImageView>
             <Text fill="WHITE" fontSmoothingType="LCD" layoutX="10.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to">

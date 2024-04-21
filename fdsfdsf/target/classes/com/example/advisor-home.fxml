@@ -11,7 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fx:id="homeButton" accessibleRole="BUTTON" fitHeight="840.0" fitWidth="390.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="homeButton" accessibleRole="BUTTON" fitHeight="847.0" fitWidth="406.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/new-background.jpg" />
          </image>
@@ -21,7 +21,7 @@
             <Image url="@images/appointment-icon.png" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="170.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME">
+      <Text fill="WHITE" layoutX="169.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font>
@@ -41,34 +41,33 @@
             <Font name="Arial Bold" size="18.0" />
          </font>
       </Text>
-<Pane layoutY="683.0" prefHeight="100.0" prefWidth="397.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
+      <AnchorPane layoutY="718.0" prefHeight="100.0" prefWidth="390.0" style="-fx-background-radius: 10; -fx-background-color: black;">
          <children>
-            <Line endX="-100.0" endY="100.0" layoutX="191.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-100.0" endY="100.0" layoutX="295.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-100.0" endY="100.0" layoutX="394.0" startX="-100.0" stroke="WHITE" />
-            <ImageView fx:id="profileButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="315.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/user.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="semesterButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="218.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/calendar.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="searchButton" fitHeight="55.0" fitWidth="72.0" layoutX="115.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/search.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="homeButton" fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+            <Line endX="-100.0" endY="239.0" layoutX="189.0" layoutY="-117.0" startX="-100.0" startY="117.0" stroke="WHITE" />
+            <Line endX="-100.0" endY="238.0" layoutX="295.0" layoutY="-116.0" startX="-100.0" startY="117.0" stroke="WHITE" />
+            <Line endX="-100.0" endY="231.0" layoutX="402.0" layoutY="-110.0" startX="-100.0" startY="111.0" stroke="WHITE" strokeLineCap="ROUND" />
+            <ImageView fx:id="advisorHomeButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="14.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/home.png" />
                </image>
             </ImageView>
+            <ImageView fx:id="advisorSearchButton" fitHeight="69.0" fitWidth="54.0" layoutX="113.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/search.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="advisorCalendarButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="223.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/calendar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="advisorProfileButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="320.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user.png" />
+               </image>
+            </ImageView>
          </children>
-      </Pane>
-
+      </AnchorPane>
       <CheckBox fx:id="checkBox1" layoutX="56.0" layoutY="159.0" mnemonicParsing="false" opacity="0.5" text="CheckBox" />
       <CheckBox fx:id="checkBox2" layoutX="56.0" layoutY="191.0" mnemonicParsing="false" text="CheckBox" />
       <Text fill="WHITE" layoutX="80.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meeting with John 3/15">

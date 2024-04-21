@@ -9,8 +9,9 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AdvisorSearchController">
    <children>
       <ImageView fitHeight="840.0" fitWidth="390.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -19,46 +20,49 @@
       </ImageView>
       
    </children>
-<Pane layoutY="683.0" prefHeight="100.0" prefWidth="397.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
+   <AnchorPane layoutY="730.0" prefHeight="100.0" prefWidth="390.0" style="-fx-background-radius: 10; -fx-background-color: black;">
          <children>
-            <Line endX="-100.0" endY="100.0" layoutX="191.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-100.0" endY="100.0" layoutX="295.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-100.0" endY="100.0" layoutX="394.0" startX="-100.0" stroke="WHITE" />
-            <ImageView fx:id="profileButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="315.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/user.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="semesterButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="218.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/calendar.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="searchButton" fitHeight="55.0" fitWidth="72.0" layoutX="115.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/search.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="homeButton" fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <ImageView fx:id="homeButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="14.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/home.png" />
                </image>
             </ImageView>
+            <ImageView fx:id="searchButton" fitHeight="69.0" fitWidth="54.0" layoutX="113.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/calendar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="semesterButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="223.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/search.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="profileButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="320.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user.png" />
+               </image>
+            </ImageView>
+         <Line endX="-100.0" endY="116.0" layoutX="192.0" startX="-100.0" stroke="WHITE" />
+         <Line endX="-100.0" endY="116.0" layoutX="396.0" layoutY="-1.0" startX="-100.0" stroke="WHITE" />
+         <Line endX="-100.0" endY="116.0" layoutX="295.0" layoutY="-1.0" startX="-100.0" stroke="WHITE" />
          </children>
-      </Pane>
+      </AnchorPane>
    <Text fill="WHITE" layoutX="124.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Search">
       <font>
          <Font size="22.0" />
       </font>
    </Text>
-   <TextField fx:id="searchStudent" layoutX="51.0" layoutY="130.0" prefHeight="27.0" prefWidth="293.0" promptText="Search Student By ID or Name" />
-   <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="14.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@images/searchicon.png" />
-      </image>
-   </ImageView>
-   <Button fx:id="SemPlanButton" layoutX="51.0" layoutY="645.0" mnemonicParsing="false" text="8 Sem Plan" />
-   <Button fx:id="AuditButton" layoutX="178.0" layoutY="645.0" mnemonicParsing="false" text="Audit" />
-   <Button fx:id="messageButton" layoutX="266.0" layoutY="645.0" mnemonicParsing="false" text="Message" />
-   <TextArea fx:id="textArea" layoutX="51.0" layoutY="206.0" prefHeight="305.0" prefWidth="293.0" promptText="Student and Information" />
+   <TextField fx:id="searchStudent" layoutX="28.0" layoutY="94.0" prefHeight="27.0" prefWidth="340.0" promptText="Search for students by name..." />
+   <Button fx:id="SemPlanButton" layoutX="59.0" layoutY="512.0" mnemonicParsing="false" text="8 Sem Plan" />
+   <Button fx:id="AuditButton" layoutX="172.0" layoutY="512.0" mnemonicParsing="false" text="Audit" />
+   <Button fx:id="messageButton" layoutX="259.0" layoutY="512.0" mnemonicParsing="false" onAction="#showMessageMenu" text="Message" />
+   <TextFlow fx:id="studentInfo" layoutX="59.0" layoutY="192.0" prefHeight="248.0" prefWidth="273.0" />
+   <Button fx:id="searchStudentsButton" layoutX="168.0" layoutY="129.0" mnemonicParsing="false" onAction="#searchStudents" text="Search" />
+   <TextField fx:id="indexField" layoutX="118.0" layoutY="458.0" promptText="Enter index of student..." />
+   <Text fx:id="indexErrorMessage" fill="RED" layoutX="139.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a search index." visible="false" />
+   <TextArea fx:id="messageField" layoutX="49.0" layoutY="584.0" prefHeight="76.0" prefWidth="292.0" visible="false" />
+   <Text fx:id="messageText" fill="WHITE" layoutX="110.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Message to: Jaxon Hayes" visible="false" />
+   <Button fx:id="sendMessageButton" layoutX="172.0" layoutY="668.0" mnemonicParsing="false" onAction="#sendMessageToStudent" text="Send" visible="false" />
+   <Text fx:id="messageConfirmationText" fill="WHITE" layoutX="98.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message sent to: " wrappingWidth="263.9609375" />
 </AnchorPane>

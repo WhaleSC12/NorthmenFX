@@ -3,8 +3,11 @@ package com.example;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.event.ActionEvent;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import com.DegreeEZ.*;
 
@@ -20,6 +23,10 @@ public class StudentSearchController {
 
     @FXML
     public void initialize() {
+        homeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-home.fxml"));
+        searchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-search.fxml"));
+        semesterButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-semester.fxml"));
+        profileButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-profile.fxml"));
     }
 
     @FXML
@@ -81,5 +88,13 @@ public class StudentSearchController {
             message.setText("Error");
         
         }
+    }
+
+    private void navigateTo(String fxmlFile) {
+        try {
+            App.setRoot(fxmlFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.err.println("Error navigating to: " + fxmlFile);        }
     }
 }

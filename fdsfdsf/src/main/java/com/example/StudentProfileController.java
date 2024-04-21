@@ -41,7 +41,7 @@ public class StudentProfileController {
     public void initialize() {
         homeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-home.fxml"));
         searchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-search.fxml"));
-        semesterButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-calendar.fxml"));
+        semesterButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-semester.fxml"));
         profileButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-profile.fxml"));
         currentUser = DegreeWorksApplication.getInstance().getUser();
         if (currentUser instanceof Student) {

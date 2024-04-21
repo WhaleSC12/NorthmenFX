@@ -98,7 +98,7 @@ public class AdvisorSearchController {
             if (!message.isEmpty()) {
                 currentStudent.addAdvisorNote(message);
                 messageField.setText("");
-                messageConfirmationText.setText("Message sent to: " + currentStudent.getFirstName() + " " + currentStudent.getLastName() + "!");)
+                messageConfirmationText.setText("Message sent to: " + currentStudent.getFirstName() + " " + currentStudent.getLastName() + "!");
                 messageConfirmationText.setVisible(true);
                 messageField.setVisible(false);
                 messageText.setVisible(false);

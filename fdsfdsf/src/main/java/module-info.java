@@ -5,6 +5,7 @@ module com.example {
     requires json.simple;
     requires org.json;
     requires javafx.base;
+    requires javafx.graphics;
 
     opens com.example to javafx.fxml;
     exports com.example;

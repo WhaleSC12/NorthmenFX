@@ -32,10 +32,11 @@
       <TextField fx:id="lastNameField" layoutX="167.0" layoutY="116.0" prefHeight="26.0" prefWidth="107.0" promptText="Last Name" />
       <TextField fx:id="usernameField" layoutX="45.0" layoutY="155.0" prefHeight="26.0" prefWidth="230.0" promptText="Username" />
       <TextField fx:id="passwordField" layoutX="45.0" layoutY="191.0" prefHeight="26.0" prefWidth="230.0" promptText="Password" />
-      <Button fx:id="registerButton" layoutX="139.0" layoutY="418.0" mnemonicParsing="false" onAction="#registerStudent" style="-fx-background-color: #cbe8ff;" text="Register" />
       <ComboBox fx:id="majorDropdown" layoutX="92.0" layoutY="232.0" prefWidth="150.0" promptText="Select Major" />
       <ComboBox fx:id="advisorDropdown" layoutX="92.0" layoutY="264.0" prefWidth="150.0" promptText="Choose Advisor" />
       <TextArea fx:id="bioField" layoutX="41.0" layoutY="308.0" prefHeight="93.0" prefWidth="257.0" promptText="Enter Bio..." />
       <Text fx:id="errorMessage" fill="RED" layoutX="55.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error: Please enter values for all fields" visible="false" />
+      <Button fx:id="registerButton" layoutX="191.0" layoutY="428.0" mnemonicParsing="false" onAction="#registerStudent" style="-fx-background-color: #cbe8ff;" text="Register" />
+      <Button fx:id="cancelBtn" layoutX="92.0" layoutY="428.0" mnemonicParsing="false" onAction="#backtoSignUp" text="Cancel" />
    </children>
 </AnchorPane>

@@ -13,13 +13,14 @@ public class StudentSemesterController {
     @FXML
     private VBox courseDetailsVBox;
     @FXML
-    private Text currentSemesterField;
+    private Text nameField, currentSemesterField;
 
     private Student currentStudent;
 
     public void initialize() {
         currentStudent = (Student) DegreeWorksApplication.getInstance().getUser(); // Get the logged-in student
         populateSemesterDropdown();
+        populateTopInfo();
         currentSemesterField.setText("Current Semester: " + (currentStudent.getSemestersCompleted() + 1));
         semesterDropdown.getSelectionModel().select(currentStudent.getSemestersCompleted());
         updateSemesterDetails(semesterDropdown.getValue());
@@ -30,6 +31,12 @@ public class StudentSemesterController {
             semesterDropdown.getItems().add("Semester " + i);
         }
         semesterDropdown.setOnAction(event -> updateSemesterDetails(semesterDropdown.getValue()));
+    }
+
+    @FXML
+    private void populateTopInfo() {
+        nameField.setText(currentStudent.getFirstName() + " " + currentStudent.getLastName());
+        currentSemesterField.setText("Current Semester: " + currentStudent.getCompletedCredits()+1);
     }
 
     private void updateSemesterDetails(String selectedSemester) {

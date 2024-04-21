@@ -127,7 +127,10 @@ public class StudentRegisterController {
         }
     }
     
-
+    @FXML private void backtoSignUp(ActionEvent event) {
+        errorMessage.setVisible(false);
+        navigateTo("SignUp.fxml");
+    }
     
 
     private void navigateTo(String fxmlFile) {

@@ -37,6 +37,6 @@
       <Text fx:id="errorMessage" fill="RED" layoutX="55.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error: Please enter values for all fields" visible="false" />
       <ComboBox fx:id="studentDropdown" layoutX="85.0" layoutY="240.0" prefWidth="150.0" promptText="Choose Students" />
       <Button fx:id="addStudentBtn" layoutX="253.0" layoutY="240.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="26.0" prefWidth="25.0" style="-fx-background-color: #3da854;" text="+" />
-      <Button fx:id="registerBtn1" layoutX="82.0" layoutY="418.0" mnemonicParsing="false" onAction="#registerAdvisor" text="Cancel" />
+      <Button fx:id="cancelBtn" layoutX="82.0" layoutY="418.0" mnemonicParsing="false" onAction="#backtoSignUp" text="Cancel" />
    </children>
 </AnchorPane>

@@ -114,6 +114,12 @@ public class AdvisorRegisterController {
     }
     }
 
+
+    @FXML private void backtoSignUp(ActionEvent event) {
+        errorMessage.setVisible(false);
+        navigateTo("SignUp.fxml");
+    }
+
     private void navigateTo(String fxmlFile) {
         try {
             App.setRoot(fxmlFile);

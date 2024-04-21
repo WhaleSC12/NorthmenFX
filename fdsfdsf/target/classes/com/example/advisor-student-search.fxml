@@ -23,7 +23,9 @@
    <AnchorPane layoutY="730.0" prefHeight="100.0" prefWidth="390.0" style="-fx-background-radius: 10; -fx-background-color: black;">
          <children>
          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+
             <ImageView fx:id="homeButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="14.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+
                <image>
                   <Image url="@images/home.png" />
                </image>
@@ -33,12 +35,15 @@
                   <Image url="@images/calendar.png" />
                </image>
             </ImageView>
+
             <ImageView fx:id="semesterButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="223.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+
                <image>
                   <Image url="@images/search.png" />
                </image>
             </ImageView>
             <ImageView fx:id="profileButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="320.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+
                <image>
                   <Image url="@images/user.png" />
                </image>

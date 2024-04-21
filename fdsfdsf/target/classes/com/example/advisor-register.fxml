@@ -13,20 +13,34 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AdvisorRegisterController">
 
    <children>
-      <ImageView fitHeight="746.0" fitWidth="371.0" layoutX="-6.0" layoutY="-141.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/new-background.jpg" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="48.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to">
-         <font>
-            <Font name="AgencyFB-Bold" size="21.0" />
-         </font></Text>
-      <ImageView fitHeight="49.0" fitWidth="177.0" layoutX="159.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/degreeEZ-logo.png" />
-         </image>
-      </ImageView>
+<Pane layoutY="683.0" prefHeight="100.0" prefWidth="397.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
+         <children>
+            <Line endX="-100.0" endY="100.0" layoutX="191.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-100.0" endY="100.0" layoutX="295.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-100.0" endY="100.0" layoutX="394.0" startX="-100.0" stroke="WHITE" />
+            <ImageView fx:id="profileButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="315.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="semesterButton" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0" layoutX="218.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/calendar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="searchButton" fitHeight="55.0" fitWidth="72.0" layoutX="115.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/search.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="homeButton" fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/home.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+
       <Text fill="#cbe8ff" layoutX="89.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your information." />
       <TextField fx:id="firstNameField" layoutX="45.0" layoutY="116.0" prefHeight="26.0" prefWidth="107.0" promptText="First Name" />
       <TextField fx:id="lastNameField" layoutX="167.0" layoutY="116.0" prefHeight="26.0" prefWidth="107.0" promptText="Last Name" />

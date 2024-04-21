@@ -16,23 +16,28 @@
          <children>
             <ImageView fitHeight="840.0" fitWidth="390.0" style="-fx-opacity: .7;">
                <image>
-                  <Image url="@images/new-background.jpg" />
+                  <Image url="@../../../../../../../NorthmenFXIntellij/NorthmenFX/fdsfdsf/src/main/resources/com/example/images/background.jpg" />
                </image>
             </ImageView>
-            <Text layoutX="5.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", your all-in-one course registration tool." textAlignment="CENTER" wrappingWidth="390.0">
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="10.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to">
                <font>
-                  <Font name="AgencyFB-Bold" size="13.0" />
+                  <Font name="Segoe UI Bold" size="30.0" />
                </font>
             </Text>
-            <TextField fx:id="usernameField" layoutX="71.0" layoutY="220.0" prefHeight="49.0" prefWidth="235.0" promptText="Username" />
-            <Text layoutX="39.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please sign in to continue to DegreeEZ." wrappingWidth="312.0">
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" your all-in-one course registration tool." textAlignment="CENTER" wrappingWidth="390.0">
                <font>
-                  <Font size="19.0" />
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usernameField" alignment="CENTER" layoutX="78.0" layoutY="226.0" prefHeight="49.0" prefWidth="235.0" promptText="Username" />
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="32.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please sign in to continue to DegreeEZ." wrappingWidth="347.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="19.0" />
                </font>
             </Text>
             <Text layoutX="82.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?" />
             <Hyperlink id="sign-up-link" fx:id="signUpLink" layoutX="227.0" layoutY="464.0" onAction="#handleSignUp" text="Sign up!" />
-            <TextField fx:id="passwordField" layoutX="71.0" layoutY="292.0" prefHeight="49.0" prefWidth="235.0" promptText="Password" />
+            <TextField fx:id="passwordField" alignment="CENTER" layoutX="78.0" layoutY="292.0" prefHeight="49.0" prefWidth="235.0" promptText="Password" />
             <Text id="loginMessage" fx:id="loginMessage" layoutX="50.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" />
             <ImageView fitHeight="49.0" fitWidth="390.0" layoutX="-1.0">
                <image>
@@ -49,22 +54,17 @@
                   <Font name="Segoe UI Semibold" size="12.0" />
                </font>
             </Hyperlink>
-            <Button fx:id="signInButton" alignment="CENTER" layoutX="146.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #333333; -fx-background-radius: 25;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="signInButton" alignment="CENTER" layoutX="151.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #333333; -fx-background-radius: 25;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Button>
-            <Text layoutX="42.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to">
-               <font>
-                  <Font name="AgencyFB-Bold" size="30.0" />
-               </font>
-            </Text>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="180.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@degreeEZ-logo.png" />
                </image>
             </ImageView>
-            <Text fx:id="signinErrorMessage" fill="#dd2323" layoutX="128.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login failed. Try again." visible="false" />
+            <Text fx:id="signinErrorMessage" fill="#dd2323" layoutX="135.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login failed. Try again." visible="false" />
          </children>
       </AnchorPane>
    </children>

@@ -1,5 +1,6 @@
 package com.example;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -30,8 +31,6 @@ public class StudentRegisterController {
     @FXML
     private ComboBox<String> majorDropdown; 
     @FXML
-    private ComboBox<String> yearDropdown;  
-    @FXML
     private ComboBox<String> advisorDropdown; 
     @FXML
     private TextArea bioField;
@@ -44,11 +43,6 @@ public class StudentRegisterController {
     private void initialize() {
         populateMajorDropdown();
         populateAdvisorDropdown();
-        setupListeners();
-    }
-
-    private void setupListeners() {
-        registerButton.setOnAction(event -> registerStudent());
     }
     
     private void populateMajorDropdown() {
@@ -67,10 +61,11 @@ public class StudentRegisterController {
 
 
 
-    private void registerStudent() {
+    @FXML
+    private void registerStudent(ActionEvent event) {
         if (firstNameField.getText().isEmpty() || lastNameField.getText().isEmpty() ||
             usernameField.getText().isEmpty() || passwordField.getText().isEmpty() ||
-            majorDropdown.getSelectionModel().isEmpty() || yearDropdown.getSelectionModel().isEmpty() ||
+            majorDropdown.getSelectionModel().isEmpty() ||
             advisorDropdown.getSelectionModel().isEmpty() || bioField.getText().isEmpty()) {
             errorMessage.setVisible(true);
             errorMessage.setText("Error: Please fill all required fields.");

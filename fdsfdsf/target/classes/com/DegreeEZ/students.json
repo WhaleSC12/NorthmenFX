@@ -61,7 +61,7 @@
         "enrolledClasses":["dbbe9692-d811-4230-90bb-d0197a2ca648","dbbe9692-d811-4230-90bb-d0197a2ca647","dbbe9692-d811-4230-90bb-d0197a2ca646","dbbe9692-d811-4230-90bb-d0197a2ca645","dbbe9692-d811-4230-90bb-d0197a2ca644","dbbe9692-d811-4230-90bb-d0197a2ca643"],
         "outstandingReq": ["dbbe9692-d811-4230-90bb-d0197a2ca659","dbbe9692-d811-4230-90bb-d0197a2ca660","dbbe9692-d811-4230-90bb-d0197a2ca661","dbbe9692-d811-4230-90bb-d0197a2ca662"],
         "advisor": "72a5236a-2c6d-4002-bf16-ff0174b0e243",
-        "advisorNotes": ["Note 1","Note 2", "Note 3"],
+        "advisorNotes": ["Remember to schedule your advisement meeting by 11/14.","Grade Dropping in CSCE211! ", "Stay locked in!"],
         "semestersCompleted": 2,
         "bio": "I'm a sophomore Computer Science student from Columbia, SC. Outside of school I enjoy fishing and hanging out with my friends. I hope to get a job as a software engineer after college."
     }

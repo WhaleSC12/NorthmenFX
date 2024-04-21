@@ -2,6 +2,7 @@ package com.example;
 
 import java.io.IOException;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
@@ -22,17 +23,17 @@ public class SignUpController {
     }
 
     @FXML
-    private void handleStudentBtnAction(MouseEvent event) {
+    private void handleStudentBtnAction(ActionEvent event) {
         navigateTo("student-register.fxml");
     }
 
     @FXML
-    private void handleAdvisorBtnAction(MouseEvent event) {
+    private void handleAdvisorBtnAction(ActionEvent event) {
         navigateTo("advisor-register.fxml");
     }
 
     @FXML
-    private void handleLoginBtnAction(MouseEvent event) {
+    private void handleLoginBtnAction(ActionEvent event) {
         navigateTo("primary.fxml");
     }
 

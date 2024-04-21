@@ -1,5 +1,6 @@
 package com.example;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -60,7 +61,8 @@ public class AdvisorRegisterController {
         }
     }
 
-    private void registerStudent() {
+    @FXML
+    private void registerAdvisor(ActionEvent event) {
         if (firstNameField.getText().isEmpty() || lastNameField.getText().isEmpty() ||
             usernameField.getText().isEmpty() || passwordField.getText().isEmpty() ||
             studentDropdown.getSelectionModel().isEmpty()) {

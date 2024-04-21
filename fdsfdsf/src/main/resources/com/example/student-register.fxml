@@ -23,12 +23,10 @@
          </image>
       </ImageView>
       <Text layoutX="89.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your information." />
-      <TextField id="studentsField" fx:id="studentsField" layoutX="45.0" layoutY="308.0" prefHeight="26.0" prefWidth="220.0" promptText="Enter Student First &amp; Last Name" visible="false" />
-      <Button id="addStudentsBtn" fx:id="addStudentsBtn" layoutX="265.0" layoutY="308.0" mnemonicParsing="false" onAction="#addStudent" style="-fx-background-color: LIGHTGREEN;" text="+" visible="false" />
       <TextField fx:id="firstNameField" layoutX="45.0" layoutY="116.0" prefHeight="26.0" prefWidth="107.0" promptText="First Name" />
       <TextField fx:id="lastNameField" layoutX="167.0" layoutY="116.0" prefHeight="26.0" prefWidth="107.0" promptText="Last Name" />
       <TextField fx:id="usernameField" layoutX="45.0" layoutY="155.0" prefHeight="26.0" prefWidth="230.0" promptText="Username" />
-      <TextField fx:id="te" layoutX="45.0" layoutY="191.0" prefHeight="26.0" prefWidth="230.0" promptText="Password" />
+      <TextField fx:id="passwordField" layoutX="45.0" layoutY="191.0" prefHeight="26.0" prefWidth="230.0" promptText="Password" />
       <Button fx:id="registerButton" layoutX="139.0" layoutY="418.0" mnemonicParsing="false" onAction="#registerStudent" style="-fx-background-color: lightgreen;" text="Register" />
       <ComboBox fx:id="majorDropdown" layoutX="92.0" layoutY="232.0" prefWidth="150.0" promptText="Select Major" />
       <ComboBox fx:id="advisorDropdown" layoutX="92.0" layoutY="264.0" prefWidth="150.0" promptText="Choose Advisor" />

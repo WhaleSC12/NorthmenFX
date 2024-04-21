@@ -16,7 +16,7 @@
          <children>
             <ImageView fitHeight="840.0" fitWidth="390.0" style="-fx-opacity: .7;">
                <image>
-                  <Image url="@../../../../../../../NorthmenFXIntellij/NorthmenFX/fdsfdsf/src/main/resources/com/example/images/background.jpg" />
+                  <Image url="@images/new-background.jpg" />
                </image>
             </ImageView>
             <Text layoutX="5.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", your all-in-one course registration tool." textAlignment="CENTER" wrappingWidth="390.0">

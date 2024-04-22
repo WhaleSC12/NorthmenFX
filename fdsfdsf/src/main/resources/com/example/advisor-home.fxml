@@ -1,47 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fx:id="homeButton" accessibleRole="BUTTON" fitHeight="847.0" fitWidth="406.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="homeButton" accessibleRole="BUTTON" fitHeight="780.0" fitWidth="390.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/new-background.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="67.0" fitWidth="36.0" layoutX="15.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/appointment-icon.png" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="169.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME">
+      <Text fill="WHITE" layoutX="33.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to ">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="53.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upcoming Appointments:">
-         <font>
-            <Font name="Arial Bold" size="18.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="33.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messages:">
-         <font>
-            <Font name="Arial Bold" size="18.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="28.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Struggling Students:">
-         <font>
-            <Font name="Arial Bold" size="18.0" />
-         </font>
-      </Text>
-      <AnchorPane layoutY="718.0" prefHeight="100.0" prefWidth="390.0" style="-fx-background-radius: 10; -fx-background-color: black;">
+      <AnchorPane layoutX="-10.0" layoutY="657.0" prefHeight="67.0" prefWidth="330.0" style="-fx-background-radius: 10; -fx-background-color: black;">
          <children>
             <Line endX="-100.0" endY="239.0" layoutX="189.0" layoutY="-117.0" startX="-100.0" startY="117.0" stroke="WHITE" />
             <Line endX="-100.0" endY="238.0" layoutX="295.0" layoutY="-116.0" startX="-100.0" startY="117.0" stroke="WHITE" />
@@ -68,40 +47,20 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <CheckBox fx:id="checkBox1" layoutX="56.0" layoutY="159.0" mnemonicParsing="false" opacity="0.5" text="CheckBox" />
-      <CheckBox fx:id="checkBox2" layoutX="56.0" layoutY="191.0" mnemonicParsing="false" text="CheckBox" />
-      <Text fill="WHITE" layoutX="80.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meeting with John 3/15">
+      <ImageView fitHeight="67.0" fitWidth="200.0" layoutX="147.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/degreeEZ-logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="91.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Struggling Students">
          <font>
-            <Font size="14.0" />
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="80.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meeting with Mary 3/16">
+      <TextFlow fx:id="strugglingStudentsField" layoutX="79.0" layoutY="280.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text fill="WHITE" layoutX="36.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use the menu on the bottom of the screen to search for students, view their info and 8 semester plan, and/or perform degree audits." textAlignment="CENTER" wrappingWidth="285.1884765625">
          <font>
-            <Font size="14.0" />
-         </font>
-      </Text>
-      <RadioButton fx:id="radioButton1" layoutX="56.0" layoutY="281.0" mnemonicParsing="false" opacity="0.5" text="RadioButton" />
-      <RadioButton fx:id="radioButton2" layoutX="56.0" layoutY="309.0" mnemonicParsing="false" text="RadioButton" />
-      <Text fill="WHITE" layoutX="77.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From John: Can we meet?">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="79.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From Mary: Can I change a class?">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Text>
-      <CheckBox fx:id="checkBox4" layoutX="56.0" layoutY="419.0" mnemonicParsing="false" opacity="0.5" text="CheckBox" />
-      <CheckBox fx:id="checkBox3" layoutX="56.0" layoutY="392.0" mnemonicParsing="false" text="CheckBox" />
-      <Text fill="WHITE" layoutX="82.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mary">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="80.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="John">
-         <font>
-            <Font size="14.0" />
+            <Font name="Arial Italic" size="18.0" />
          </font>
       </Text>
 

@@ -11,18 +11,17 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AdvisorSearchController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="427.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AdvisorSearchController">
    <children>
-      <ImageView fitHeight="840.0" fitWidth="390.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="840.0" fitWidth="398.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/new-background.jpg" />
          </image>
       </ImageView>
       
    </children>
-   <AnchorPane layoutY="730.0" prefHeight="100.0" prefWidth="390.0" style="-fx-background-radius: 10; -fx-background-color: black;">
+   <AnchorPane layoutY="660.0" prefHeight="100.0" prefWidth="390.0" style="-fx-background-radius: 10; -fx-background-color: black;">
          <children>
-         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
             <ImageView fx:id="homeButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="14.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/home.png" />

@@ -29,7 +29,7 @@ public class AdvisorSearchController {
     @FXML
     private void initialize() {
         homeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-home.fxml"));
-        searchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-search.fxml"));
+        searchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-student-search.fxml"));
         semesterButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-semester.fxml"));
         profileButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-profile.fxml"));
     }

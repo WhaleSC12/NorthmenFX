@@ -41,7 +41,7 @@ public class PrimaryController {
             if (StudentList.getInstance().contains(user.getUUID())) {
                 navigateTo("student-home.fxml");
             } else if (AdvisorList.getInstance().contains(user.getUUID())) {
-                navigateTo("advisor-semester.fxml");
+                navigateTo("advisor-student-search.fxml");
             } else {
                 // In case the user is neither in student nor advisor lists
                 signinErrorMessage.setText("User role undetermined.");

@@ -58,7 +58,7 @@
          <Font name="Arial Bold" size="18.0" />
       </font>
    </Text>
-   <TextArea fx:id="enrolledCourses" layoutX="43.0" layoutY="259.0" prefHeight="132.0" prefWidth="216.0" promptText="List of Courses" />
+   <TextFlow fx:id="enrolledCourses" layoutX="43.0" layoutY="259.0" prefHeight="132.0" prefWidth="216.0" promptText="List of Courses" />
    <Text fill="WHITE" layoutX="14.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Outstanding Requirements">
       <font>
          <Font name="Arial Bold" size="18.0" />

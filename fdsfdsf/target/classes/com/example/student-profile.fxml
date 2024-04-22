@@ -86,7 +86,6 @@
          </font>
       </Text>
       <TextArea fx:id="bioField" editable="false" layoutX="53.0" layoutY="340.0" prefHeight="200.0" prefWidth="297.0" wrapText="true" />
-      <Button fx:id="editProfileBtn" layoutX="114.0" layoutY="601.0" mnemonicParsing="false" text="Edit Profile" />
-      <Button fx:id="signOutBtn" layoutX="198.0" layoutY="601.0" mnemonicParsing="false" onAction="#signOut" text="Sign Out" />
+      <Button fx:id="signOutBtn" layoutX="156.0" layoutY="601.0" mnemonicParsing="false" onAction="#signOut" text="Sign Out" />
    </children>
 </AnchorPane>

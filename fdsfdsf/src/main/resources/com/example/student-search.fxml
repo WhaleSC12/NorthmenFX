@@ -18,7 +18,7 @@
          </image>
       </ImageView>
       <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" />
-      <Pane layoutY="745.0" prefHeight="100.0" prefWidth="397.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
+      <Pane layoutY="686.0" prefHeight="100.0" prefWidth="397.0" style="-fx-background-color: black; -fx-background-radius: 15 15 0 0;">
          <children>
             <Line endX="-100.0" endY="100.0" layoutX="191.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-100.0" endY="100.0" layoutX="295.0" startX="-100.0" stroke="WHITE" />

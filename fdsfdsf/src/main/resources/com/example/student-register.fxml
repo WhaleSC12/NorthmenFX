@@ -10,33 +10,33 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.StudentRegisterController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.StudentRegisterController">
 
    <children>
-   <ImageView fitHeight="746.0" fitWidth="371.0" layoutX="-6.0" layoutY="-141.0" pickOnBounds="true" preserveRatio="true">
+   <ImageView fitHeight="925.0" fitWidth="526.0" layoutX="-23.0" layoutY="-145.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/new-background.jpg" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="48.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to">
+      <Text fill="WHITE" layoutX="76.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to">
          <font>
             <Font name="AgencyFB-Bold" size="21.0" />
          </font></Text>
-      <ImageView fitHeight="49.0" fitWidth="177.0" layoutX="139.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="49.0" fitWidth="177.0" layoutX="167.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/degreeEZ-logo.png" />
          </image>
       </ImageView>
-      <Text fill="#cbe8ff" layoutX="89.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your information." />
-      <TextField fx:id="firstNameField" layoutX="45.0" layoutY="116.0" prefHeight="26.0" prefWidth="107.0" promptText="First Name" />
-      <TextField fx:id="lastNameField" layoutX="167.0" layoutY="116.0" prefHeight="26.0" prefWidth="107.0" promptText="Last Name" />
-      <TextField fx:id="usernameField" layoutX="45.0" layoutY="155.0" prefHeight="26.0" prefWidth="230.0" promptText="Username" />
-      <TextField fx:id="passwordField" layoutX="45.0" layoutY="191.0" prefHeight="26.0" prefWidth="230.0" promptText="Password" />
-      <ComboBox fx:id="majorDropdown" layoutX="92.0" layoutY="232.0" prefWidth="150.0" promptText="Select Major" />
-      <ComboBox fx:id="advisorDropdown" layoutX="92.0" layoutY="264.0" prefWidth="150.0" promptText="Choose Advisor" />
-      <TextArea fx:id="bioField" layoutX="41.0" layoutY="308.0" prefHeight="93.0" prefWidth="257.0" promptText="Enter Bio..." />
+      <Text fill="#cbe8ff" layoutX="117.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your information." />
+      <TextField fx:id="firstNameField" layoutX="73.0" layoutY="136.0" prefHeight="26.0" prefWidth="107.0" promptText="First Name" />
+      <TextField fx:id="lastNameField" layoutX="195.0" layoutY="136.0" prefHeight="26.0" prefWidth="107.0" promptText="Last Name" />
+      <TextField fx:id="usernameField" layoutX="73.0" layoutY="175.0" prefHeight="26.0" prefWidth="230.0" promptText="Username" />
+      <TextField fx:id="passwordField" layoutX="73.0" layoutY="211.0" prefHeight="26.0" prefWidth="230.0" promptText="Password" />
+      <ComboBox fx:id="majorDropdown" layoutX="120.0" layoutY="252.0" prefWidth="150.0" promptText="Select Major" />
+      <ComboBox fx:id="advisorDropdown" layoutX="120.0" layoutY="284.0" prefWidth="150.0" promptText="Choose Advisor" />
+      <TextArea fx:id="bioField" layoutX="69.0" layoutY="328.0" prefHeight="93.0" prefWidth="257.0" promptText="Enter Bio..." />
       <Text fx:id="errorMessage" fill="RED" layoutX="55.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error: Please enter values for all fields" visible="false" />
-      <Button fx:id="registerButton" layoutX="191.0" layoutY="428.0" mnemonicParsing="false" onAction="#registerStudent" style="-fx-background-color: #cbe8ff;" text="Register" />
-      <Button fx:id="cancelBtn" layoutX="92.0" layoutY="428.0" mnemonicParsing="false" onAction="#backtoSignUp" text="Cancel" />
+      <Button fx:id="registerButton" layoutX="219.0" layoutY="448.0" mnemonicParsing="false" onAction="#registerStudent" style="-fx-background-color: #cbe8ff;" text="Register" />
+      <Button fx:id="cancelBtn" layoutX="120.0" layoutY="448.0" mnemonicParsing="false" onAction="#backtoSignUp" text="Cancel" />
    </children>
 </AnchorPane>

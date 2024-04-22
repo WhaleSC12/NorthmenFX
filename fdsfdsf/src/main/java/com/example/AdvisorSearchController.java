@@ -5,7 +5,11 @@ import java.util.ArrayList;
 import com.DegreeEZ.*;
 
 import javafx.event.ActionEvent;
+import javafx.scene.Node;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -13,6 +17,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
+import javafx.stage.Stage;
 
 public class AdvisorSearchController {
 
@@ -92,6 +97,10 @@ public class AdvisorSearchController {
         }
     }
 
+
+
+
+
     @FXML
     private void sendMessageToStudent(ActionEvent event) {
         if (currentStudent != null) {
@@ -108,6 +117,15 @@ public class AdvisorSearchController {
         }
     }
 
+    
+    
+
+    @FXML
+    private void toAudit(ActionEvent event) {
+        navigateTo("advisor-audit.fxml");
+    }
+
+    @FXML
     private void navigateTo(String fxmlFile) {
         System.out.println("Navigating to " + fxmlFile);
         try {

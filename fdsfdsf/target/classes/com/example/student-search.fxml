@@ -50,7 +50,7 @@
       <Button fx:id="registerButton" layoutX="154.0" layoutY="570.0" onAction="#registerSelectedCourse" prefHeight="33.0" prefWidth="101.0" text="Register" />
       <Button fx:id="searchBtn" layoutX="166.0" layoutY="117.0" mnemonicParsing="false" onAction="#performSearch" text="Search" />
       <TextField fx:id="indexField" layoutX="114.0" layoutY="574.0" prefHeight="26.0" prefWidth="40.0" />
-      <Text fx:id="message" fill="WHITE" layoutX="142.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class Registered!" visible="false" />
+      <Text fx:id="message" fill="WHITE" layoutX="113.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class Registered!" visible="false" wrappingWidth="182.0751953125" />
 
    </children>
 </AnchorPane>

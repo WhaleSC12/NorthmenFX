@@ -145,6 +145,7 @@ public class Advisor extends User {
     }
 
 
+
     public String getName() {
         return getFirstName() + " " + getLastName();
     }

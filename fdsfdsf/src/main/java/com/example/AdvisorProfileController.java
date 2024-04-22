@@ -1,15 +1,18 @@
 package com.example;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 
 import java.io.IOException;
 
 import com.DegreeEZ.*;
 
-public class AdvisorProfile {
+public class AdvisorProfileController {
 
     @FXML
     private ImageView advisorHomeButton;
@@ -24,7 +27,13 @@ public class AdvisorProfile {
     private ImageView advisorProfileButton;
 
     @FXML
-    private TextField advisorName;
+    private Text nameField;
+
+    @FXML
+    private Button signOutBtn;
+
+    @FXML
+    private TextArea bioField;
 
     private Advisor currentAdvisor;
 
@@ -44,13 +53,9 @@ public class AdvisorProfile {
     }
 
     private void updateProfile(Advisor advisor) {
-        advisorName.setText(advisor.toString());
+        nameField.setText(advisor.getName());
     }
     
-    @FXML 
-    private void editProfile() {
-        //if there is time
-    }
 
     @FXML
     private void signOut() {

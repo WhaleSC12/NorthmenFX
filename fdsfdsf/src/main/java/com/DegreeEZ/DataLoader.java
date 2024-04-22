@@ -70,7 +70,6 @@ class DataLoader {
             String lastName = advisorJSON.getString("advisor_lastName");
             String username = advisorJSON.getString("advisor_username");
             String password = advisorJSON.getString("advisor_password");
-
             JSONArray studentUuidsJSON = advisorJSON.getJSONArray("advisor_students");
             ArrayList<UUID> studentUuids = new ArrayList<>();
             for (int j = 0; j < studentUuidsJSON.length(); j++) {

@@ -73,22 +73,28 @@ public class StudentSearchController {
                 User currentUser = DegreeWorksApplication.getInstance().getUser();
                 if (currentUser instanceof Student) {
                     Student student = (Student) currentUser;
-                    student.addEnrolledCourse(selectedCourse);  
-                    message.setText("Registered for course: " + selectedCourse.getName());
+                    student.addEnrolledCourse(selectedCourse);
+                    message.setText("Course Registered: " + selectedCourse.getName()); // Updated message
+                    message.setVisible(true);
                 } else {
-                    System.out.println("Registration failed: User is not a student.");
+                    message.setText("Registration failed: User is not a student.");
+                    message.setVisible(true);
                 }
             } else {
-                throw new IllegalArgumentException("Invalid course index.");
+                message.setText("Invalid course index."); // More specific error message
+                message.setVisible(true);
             }
         } catch (NumberFormatException e) {
-            message.setText("Error");
+            message.setText("Invalid input. Please enter a valid number.");
+            message.setVisible(true);
             
         } catch (IllegalArgumentException e) {
-            message.setText("Error");
+            message.setText("Unexpected error occurred. Please try again.");
+            message.setVisible(true);
         
         }
     }
+
 
     private void navigateTo(String fxmlFile) {
         try {

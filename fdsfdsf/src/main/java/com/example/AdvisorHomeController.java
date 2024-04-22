@@ -20,6 +20,7 @@ public class AdvisorHomeController {
 
     private Advisor currentAdvisor;
 
+    @FXML
     public void initialize() {
         homeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-home.fxml"));
         searchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-student-search.fxml"));

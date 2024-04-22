@@ -8,9 +8,9 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AdvisorHomeController">
    <children>
-      <ImageView fx:id="homeButton" accessibleRole="BUTTON" fitHeight="840.0" fitWidth="418.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView accessibleRole="BUTTON" fitHeight="840.0" fitWidth="418.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/new-background.jpg" />
          </image>
@@ -25,22 +25,22 @@
             <Line endX="-100.0" endY="239.0" layoutX="189.0" layoutY="-117.0" startX="-100.0" startY="117.0" stroke="WHITE" />
             <Line endX="-100.0" endY="238.0" layoutX="295.0" layoutY="-116.0" startX="-100.0" startY="117.0" stroke="WHITE" />
             <Line endX="-100.0" endY="231.0" layoutX="402.0" layoutY="-110.0" startX="-100.0" startY="111.0" stroke="WHITE" strokeLineCap="ROUND" />
-            <ImageView fx:id="advisorHomeButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="22.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="homeButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="22.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/home.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="advisorSearchButton" fitHeight="69.0" fitWidth="54.0" layoutX="119.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="searchButton" fitHeight="69.0" fitWidth="54.0" layoutX="119.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/search.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="advisorCalendarButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="217.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="semesterButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="217.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/calendar.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="advisorProfileButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="325.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="profileButton" accessibleRole="BUTTON" fitHeight="69.0" fitWidth="54.0" layoutX="325.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/user.png" />
                </image>
@@ -52,12 +52,12 @@
             <Image url="@degreeEZ-logo.png" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="91.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Struggling Students">
+      <Text fill="WHITE" layoutX="107.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Struggling Students">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font>
       </Text>
-      <TextFlow fx:id="strugglingStudentsField" layoutX="79.0" layoutY="280.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextFlow fx:id="strugglingStudentsField" layoutX="90.0" layoutY="279.0" prefHeight="200.0" prefWidth="200.0" />
       <Text fill="WHITE" layoutX="47.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use the menu on the bottom of the screen to search for students, view their info and 8 semester plan, and/or perform degree audits." textAlignment="CENTER" wrappingWidth="285.1884765625">
          <font>
             <Font name="Arial Italic" size="18.0" />

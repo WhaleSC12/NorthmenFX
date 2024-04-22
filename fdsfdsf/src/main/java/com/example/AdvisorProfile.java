@@ -26,25 +26,30 @@ public class AdvisorProfile {
     @FXML
     private TextField advisorName;
 
-    private User currentUser;
+    private Advisor currentAdvisor;
 
     @FXML
     public void initialize() {
-        advisorHomeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-home.fxml"));
-        advisorSearchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-student-search.fxml"));
-        advisorCalendarButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-semester.fxml"));
-        advisorProfileButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-profile.fxml"));
-        currentUser = DegreeWorksApplication.getInstance().getUser();
-        if(currentUser instanceof Advisor) {
-            Advisor advisor = (Advisor) currentUser;
-            updateProfile(advisor);
-        } else {
-            System.out.println("Current user is not an Advisor");
-        }
+            advisorHomeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-home.fxml"));
+            advisorSearchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-student-search.fxml"));
+            advisorCalendarButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-semester.fxml"));
+            advisorProfileButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-profile.fxml"));
+            currentAdvisor = (Advisor) DegreeWorksApplication.getInstance().getUser(); // Assuming the current user is correctly set as an Advisor
+            if (currentAdvisor instanceof Advisor) {
+                Advisor advisor = (Advisor) currentAdvisor;
+                updateProfile(advisor);
+            } else {
+                System.out.println("Current user is not an Advisor");
+            }
     }
 
     private void updateProfile(Advisor advisor) {
         advisorName.setText(advisor.toString());
+    }
+    
+    @FXML 
+    private void editProfile() {
+        //if there is time
     }
 
     @FXML
@@ -63,6 +68,8 @@ public class AdvisorProfile {
             System.out.println("Failed to navigate to: " + fxmlFile);
         }
     }
+
+    
 
 }
 

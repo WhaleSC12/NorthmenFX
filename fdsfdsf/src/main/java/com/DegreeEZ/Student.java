@@ -35,7 +35,7 @@ public class Student extends User {
         this.enrolledCourses = enrolledCourses;
         this.outstandingRequirements = outstandingRequirements;
         this.advisorUUID = advisorUUID;
-        this.advisorNotes = new ArrayList<String>();
+        this.advisorNotes = (advisorNotes == null ? new ArrayList<>() : advisorNotes);
         this.semestersCompleted = semestersCompleted;
         this.bio = bio;
     }

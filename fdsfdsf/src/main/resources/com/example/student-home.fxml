@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -8,6 +7,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.StudentHomeController">
    <children>
@@ -44,13 +44,12 @@
             </ImageView>
          </children>
       </Pane>
-      <Text fill="WHITE" layoutX="110.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes from Advisor" wrappingWidth="176.02556610107422">
+      <Text fill="WHITE" layoutX="110.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes from Advisor" wrappingWidth="176.02556610107422">
          <font>
             <Font name="Adelle Sans Devanagari Heavy" size="19.0" />
          </font>
       </Text>
-      <TextArea fx:id="notesField" layoutX="48.0" layoutY="134.0" prefHeight="127.0" prefWidth="308.0" />
-      <Text fill="WHITE" layoutX="118.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently Enrolled" wrappingWidth="168.09322357177734">
+      <Text fill="WHITE" layoutX="118.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently Enrolled" wrappingWidth="168.09322357177734">
          <font>
             <Font name="Adelle Sans Devanagari Heavy" size="19.0" />
          </font>
@@ -60,6 +59,17 @@
             <Font name="Adelle Sans Devanagari Heavy" size="19.0" />
          </font>
       </Text>
-      <TextArea fx:id="currentlyEnrolledField" layoutX="50.0" layoutY="333.0" prefHeight="143.0" prefWidth="308.0" />
+      <TextFlow fx:id="currentlyEnrolledField" layoutX="93.0" layoutY="391.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextFlow fx:id="notesField" layoutX="102.0" layoutY="169.0" prefHeight="121.0" prefWidth="200.0" />
+      <Text fill="WHITE" layoutX="46.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to" wrappingWidth="176.02556610107422">
+         <font>
+            <Font name="Adelle Sans Devanagari Heavy" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="55.0" fitWidth="200.0" layoutX="168.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@degreeEZ-logo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

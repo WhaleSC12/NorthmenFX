@@ -25,7 +25,7 @@ public class AdvisorHomeController {
         advisorSearchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-student-search.fxml"));
         advisorCalendarButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-semester.fxml"));
         advisorProfileButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-profile.fxml"));
-        currentAdvisor = (Advisor) DegreeWorksApplication.getInstance().getUser(); // Assuming the current user is correctly set as an Advisor
+        currentAdvisor = (Advisor) DegreeWorksApplication.getInstance().getUser(); 
         populateStrugglingStudents();
     }
 

@@ -2,25 +2,20 @@ package com.example;
 
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
-import javafx.scene.control.TextArea;
-import com.DegreeEZ.Student;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
+
 import com.DegreeEZ.*;
 
 import java.io.IOException;
-import java.util.ArrayList;
-
-import com.DegreeEZ.DegreeWorksApplication;
-import javafx.scene.input.MouseEvent;
-
 
 public class StudentHomeController {
 
     @FXML
-    private TextArea notesField;
-
+    private TextFlow notesField;
     @FXML
-    private TextArea currentlyEnrolledField;
-
+    private TextFlow currentlyEnrolledField;
     @FXML
     private ImageView homeButton, searchButton, semesterButton, profileButton;
 
@@ -31,43 +26,38 @@ public class StudentHomeController {
         searchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-search.fxml"));
         semesterButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-semester.fxml"));
         profileButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("student-profile.fxml"));
-
-        notesField.setEditable(false);
-        currentlyEnrolledField.setEditable(false);
         
         updateNotesField();
         updateCurrentlyEnrolledField();
     }
 
     private void updateNotesField() {
-        // Get the current user
         Student currentStudent = (Student) DegreeWorksApplication.getInstance().getUser();
-        if (currentStudent != null) {
-            StringBuilder notes = new StringBuilder();
+        notesField.getChildren().clear();
+        if (currentStudent != null && currentStudent.getAdvisorNotes() != null && !currentStudent.getAdvisorNotes().isEmpty()) {
             for (String note : currentStudent.getAdvisorNotes()) {
-                notes.append(note).append("\n");
+                Text textNode = new Text(note + "\n");
+                // Adding padding node
+                Text paddingNode = new Text("\n");  // Use an empty Text node as a spacer
+                notesField.getChildren().addAll(textNode, paddingNode);
             }
-            // Set the text of notesField to the collected notes
-            notesField.setText(notes.toString());
         } else {
-            notesField.setText("No notes from advisor.");
+            notesField.getChildren().add(new Text("No notes from advisor."));
         }
     }
-
+    
     private void updateCurrentlyEnrolledField() {
         Student currentStudent = (Student) DegreeWorksApplication.getInstance().getUser();
-        ArrayList<Course> enrolled = currentStudent.getEnrolledCourses();
-        if (currentStudent != null && !enrolled.isEmpty()) {
-            StringBuilder courses = new StringBuilder();
+        currentlyEnrolledField.getChildren().clear();
+        if (currentStudent != null && !currentStudent.getEnrolledCourses().isEmpty()) {
             for (Course course : currentStudent.getEnrolledCourses()) {
-                courses.append(course).append("\n");
+                Text courseText = new Text(course.getName() + " - Credits: " + course.getCreditHours() + "\n");
+                Text paddingNode = new Text("\n"); // Use an empty Text node as a spacer
+                currentlyEnrolledField.getChildren().addAll(courseText, paddingNode);
             }
-
-            currentlyEnrolledField.setText(courses.toString());
         } else {
-            currentlyEnrolledField.setText("No currently enrolled courses");
+            currentlyEnrolledField.getChildren().add(new Text("No currently enrolled courses."));
         }
-
     }
 
     private void navigateTo(String fxmlFile) {
@@ -75,6 +65,7 @@ public class StudentHomeController {
             App.setRoot(fxmlFile);
         } catch (IOException e) {
             e.printStackTrace();
-            System.err.println("Error navigating to: " + fxmlFile);        }
+            System.err.println("Error navigating to: " + fxmlFile);
+        }
     }
 }

@@ -19,42 +19,42 @@
             },
             {
                 "completedCourse_uuid":"dbbe9692-d811-4230-90bb-d0197a2ca656",
-                "completedCourse_grade": "A",
+                "completedCourse_grade": "D",
                 "completedCourse_semesterTaken": 1
             },
             {
                 "completedCourse_uuid":"dbbe9692-d811-4230-90bb-d0197a2ca655",
-                "completedCourse_grade": "A",
+                "completedCourse_grade": "D",
                 "completedCourse_semesterTaken": 1
             },
             {
                 "completedCourse_uuid":"dbbe9692-d811-4230-90bb-d0197a2ca654",
-                "completedCourse_grade": "A",
+                "completedCourse_grade": "D",
                 "completedCourse_semesterTaken": 2
             },
             {
                 "completedCourse_uuid":"dbbe9692-d811-4230-90bb-d0197a2ca653",
-                "completedCourse_grade": "B",
+                "completedCourse_grade": "D",
                 "completedCourse_semesterTaken": 2
             },
             {
                 "completedCourse_uuid":"dbbe9692-d811-4230-90bb-d0197a2ca652",
-                "completedCourse_grade": "A",
+                "completedCourse_grade": "D",
                 "completedCourse_semesterTaken": 2
             },
             {
                 "completedCourse_uuid":"dbbe9692-d811-4230-90bb-d0197a2ca651",
-                "completedCourse_grade": "C",
+                "completedCourse_grade": "D",
                 "completedCourse_semesterTaken": 2
             },
             {
                 "completedCourse_uuid":"dbbe9692-d811-4230-90bb-d0197a2ca650",
-                "completedCourse_grade": "B",
+                "completedCourse_grade": "D",
                 "completedCourse_semesterTaken": 2
             },
             {
                 "completedCourse_uuid":"dbbe9692-d811-4230-90bb-d0197a2ca649",
-                "completedCourse_grade": "A",
+                "completedCourse_grade": "D",
                 "completedCourse_semesterTaken": 2
             }
         ],

@@ -16,15 +16,15 @@ public class AdvisorHomeController {
     private TextFlow strugglingStudentsField;
 
     @FXML
-    private ImageView advisorHomeButton, advisorSearchButton, advisorCalendarButton, advisorProfileButton;
+    private ImageView homeButton, searchButton, semesterButton, profileButton;
 
     private Advisor currentAdvisor;
 
     public void initialize() {
-        advisorHomeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-home.fxml"));
-        advisorSearchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-student-search.fxml"));
-        advisorCalendarButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-semester.fxml"));
-        advisorProfileButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-profile.fxml"));
+        homeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-home.fxml"));
+        searchButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-student-search.fxml"));
+        semesterButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-semester.fxml"));
+        profileButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> navigateTo("advisor-profile.fxml"));
         currentAdvisor = (Advisor) DegreeWorksApplication.getInstance().getUser(); 
         populateStrugglingStudents();
     }
